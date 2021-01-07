@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "age=0": { "model": "caliberdm:white_grape_plant0" },
+        "age=1": { "model": "caliberdm:white_grape_plant1" },
+        "age=2": { "model": "caliberdm:white_grape_plant2" },
+        "age=3": { "model": "caliberdm:white_grape_plant3" }
+    }
+}

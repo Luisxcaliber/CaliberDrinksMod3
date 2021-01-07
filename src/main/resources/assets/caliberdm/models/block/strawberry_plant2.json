@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "caliberdm:blocks/strawberry_plant2"
+    }
+}

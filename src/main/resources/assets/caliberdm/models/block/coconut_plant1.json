@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "caliberdm:blocks/coconut_plant1"
+    }
+}
