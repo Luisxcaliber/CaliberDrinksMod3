@@ -17,6 +17,6 @@ public class BlockFluid extends BlockFluidClassic
 		setRegistryName(name);
 		
 		ModBlocks.BLOCKS.add(this);
-		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+		ModBlocks.ITEMBLOCKS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 }

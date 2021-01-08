@@ -37,11 +37,14 @@ import com.luisxcaliber.caliberdrinksmod.blocks.plants.BlockWhiteGrapePlant;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 
 public class ModBlocks 
 {
-	public static final List<Block> BLOCKS = new ArrayList<Block>();
-	
+	public static final List<Block> BLOCKS = new ArrayList<>();
+	public static final List<Item> ITEMBLOCKS = new ArrayList<>();
+
 	//Bushes
 	public static final Block GRAPE_BUSH = new BlockGrapeBush("grape_bush", Material.LEAVES);
 	public static final Block ORANGE_BUSH = new BlockOrangeBush("orange_bush", Material.LEAVES);

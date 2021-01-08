@@ -22,6 +22,7 @@ public class RegistryHandler
 	public static void onItemRegister(RegistryEvent.Register<Item> event)
 	{
 		event.getRegistry().registerAll(ModItems.ITEMS.toArray(new Item[0]));
+		event.getRegistry().registerAll(ModBlocks.ITEMBLOCKS.toArray(new Item[0]));
 	}
 	
 	@SubscribeEvent

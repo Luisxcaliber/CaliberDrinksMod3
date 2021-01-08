@@ -25,7 +25,7 @@ public class BlockTeaLeafPlant extends BlockCrops
 		setRegistryName(name);
 		
 		ModBlocks.BLOCKS.add(this);
-		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+		ModBlocks.ITEMBLOCKS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 	
 	@Override
