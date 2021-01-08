@@ -18,6 +18,6 @@ public class BlockBase extends Block
 		setCreativeTab(CaliberDrinksMod.tabCaliberDrinksMod);
 		
 		ModBlocks.BLOCKS.add(this);
-		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+		ModBlocks.ITEMBLOCKS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 	}
 }
