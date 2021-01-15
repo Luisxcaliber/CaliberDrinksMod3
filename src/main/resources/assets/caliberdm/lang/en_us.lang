@@ -54,6 +54,9 @@ item.pomegranate.name=Pomegranate
 item.peach.name=Peach
 item.mango.name=Mango
 
+//Buckets
+item.apple_juice_bucket.name=Apple Juice Bucket
+
 //Plants
 tile.grape_plant.name=Grape Plant
 tile.orange_plant.name=Orange Plant

@@ -99,4 +99,5 @@ public class ModItems
 	
 	//Buckets
 	public static final Item APPLE_JUICE_BUCKET = new ItemDrinkBucket("apple_juice_bucket", ModBlocks.APPLE_JUICE_BLOCK);
+	public static final Item GRAPE_JUICE_BUCKET = new ItemDrinkBucket("grape_juice_bucket", ModBlocks.GRAPE_JUICE_BLOCK);
 }

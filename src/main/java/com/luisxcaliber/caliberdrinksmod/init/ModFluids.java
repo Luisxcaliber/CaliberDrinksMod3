@@ -13,7 +13,6 @@ public class ModFluids
 	public static void registerFluid(Fluid fluid)
 	{
 		FluidRegistry.registerFluid(fluid);
-		//FluidRegistry.addBucketForFluid(fluid);
 	}
 	
 	public static final Fluid APPLE_JUICE_FLUID = new FluidBase("apple_juice_fluid", new ResourceLocation("caliberdm:blocks/fluid_drink_still"), new ResourceLocation("caliberdm:blocks/fluid_drink_flow"), null, new Color(255, 225, 0));

@@ -1,7 +1,6 @@
 package com.luisxcaliber.caliberdrinksmod.blocks;
 
 import com.luisxcaliber.caliberdrinksmod.init.ModBlocks;
-import com.luisxcaliber.caliberdrinksmod.init.ModItems;
 
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemBlock;
