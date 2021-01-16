@@ -1,10 +1,8 @@
-package com.luisxcaliber.caliberdrinksmod.blocks.bushes;
+package com.luisxcaliber.caliberdrinksmod.blocks;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
-
-import com.luisxcaliber.caliberdrinksmod.blocks.BlockBase;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -16,9 +14,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.common.IShearable;
 
-public class BlockBush extends BlockBase implements IShearable
+public class BlockDrinkBush extends BlockBase implements IShearable
 {
-	public BlockBush(String name, Material material)
+	private final Item itemdropIn;
+	
+	public BlockDrinkBush(String name, Item itemdrop, Material material)
 	{
 		super(name, material);
 		
@@ -26,6 +26,7 @@ public class BlockBush extends BlockBase implements IShearable
 		setHardness(0.2f);
 		setResistance(0.2f);
 		setLightOpacity(1);
+		itemdropIn = itemdrop;
 	}
 
 	@Override
@@ -42,7 +43,7 @@ public class BlockBush extends BlockBase implements IShearable
 	
 	public Item getItemDropped(IBlockState state, Random rand, int fortune)
 	{
-		return null;
+		return itemdropIn;
 	}
 	
 	public int quantityDropped(Random rand)

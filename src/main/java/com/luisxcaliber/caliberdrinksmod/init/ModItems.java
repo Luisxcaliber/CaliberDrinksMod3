@@ -1,24 +1,10 @@
 package com.luisxcaliber.caliberdrinksmod.init;
 
+import com.luisxcaliber.caliberdrinksmod.items.ItemDrinkSeed;
 import com.luisxcaliber.caliberdrinksmod.items.food.DrinkBase;
 import com.luisxcaliber.caliberdrinksmod.items.food.DrinkCoffee;
 import com.luisxcaliber.caliberdrinksmod.items.food.DrinkMilk;
 import com.luisxcaliber.caliberdrinksmod.items.food.FoodBase;
-import com.luisxcaliber.caliberdrinksmod.items.seeds.ItemCoconutSeed;
-import com.luisxcaliber.caliberdrinksmod.items.seeds.ItemCoffeeBeanSeed;
-import com.luisxcaliber.caliberdrinksmod.items.seeds.ItemCranberrySeed;
-import com.luisxcaliber.caliberdrinksmod.items.seeds.ItemGrapeSeed;
-import com.luisxcaliber.caliberdrinksmod.items.seeds.ItemGrapefruitSeed;
-import com.luisxcaliber.caliberdrinksmod.items.seeds.ItemLemonSeed;
-import com.luisxcaliber.caliberdrinksmod.items.seeds.ItemMangoSeed;
-import com.luisxcaliber.caliberdrinksmod.items.seeds.ItemOrangeSeed;
-import com.luisxcaliber.caliberdrinksmod.items.seeds.ItemPeachSeed;
-import com.luisxcaliber.caliberdrinksmod.items.seeds.ItemPineappleSeed;
-import com.luisxcaliber.caliberdrinksmod.items.seeds.ItemPomegranateSeed;
-import com.luisxcaliber.caliberdrinksmod.items.seeds.ItemStrawberrySeed;
-import com.luisxcaliber.caliberdrinksmod.items.seeds.ItemTeaLeafSeed;
-import com.luisxcaliber.caliberdrinksmod.items.seeds.ItemTomatoSeed;
-import com.luisxcaliber.caliberdrinksmod.items.seeds.ItemWhiteGrapeSeed;
 import com.luisxcaliber.caliberdrinksmod.items.tools.ItemDrinkBucket;
 import com.luisxcaliber.caliberdrinksmod.util.handlers.RegistryHandler;
 
@@ -96,6 +82,7 @@ public class ModItems
 	//Buckets
 	public static final Item APPLE_JUICE_BUCKET;
 	public static final Item GRAPE_JUICE_BUCKET;
+	public static final Item ORANGE_JUICE_BUCKET;
 	
 	static
 	{
@@ -150,25 +137,26 @@ public class ModItems
 		MANGO = new FoodBase("mango", 6, 2.4f, false);
 		
 		//Plant Seeds
-		GRAPE_SEED = new ItemGrapeSeed("grape_seed");
-		ORANGE_SEED = new ItemOrangeSeed("orange_seed");
-		LEMON_SEED = new ItemLemonSeed("lemon_seed");
-		GRAPEFRUIT_SEED = new ItemGrapefruitSeed("grapefruit_seed");
-		PINEAPPLE_SEED = new ItemPineappleSeed("pineapple_seed");
-		STRAWBERRY_SEED = new ItemStrawberrySeed("strawberry_seed");
-		COCONUT_SEED = new ItemCoconutSeed("coconut_seed");
-		TEA_LEAF_SEED = new ItemTeaLeafSeed("tea_leaf_seed");
-		WHITE_GRAPE_SEED = new ItemWhiteGrapeSeed("white_grape_seed");
-		CRANBERRY_SEED = new ItemCranberrySeed("cranberry_seed");
-		TOMATO_SEED = new ItemTomatoSeed("tomato_seed");
-		POMEGRANATE_SEED = new ItemPomegranateSeed("pomegranate_seed");
-		PEACH_SEED = new ItemPeachSeed("peach_seed");
-		COFFEE_BEAN = new ItemCoffeeBeanSeed("coffee_bean");
-		MANGO_SEED = new ItemMangoSeed("mango_seed");
+		GRAPE_SEED = new ItemDrinkSeed("grape_seed", ModBlocks.GRAPE_PLANT);
+		ORANGE_SEED = new ItemDrinkSeed("orange_seed", ModBlocks.ORANGE_PLANT);
+		LEMON_SEED = new ItemDrinkSeed("lemon_seed", ModBlocks.LEMON_PLANT);
+		GRAPEFRUIT_SEED = new ItemDrinkSeed("grapefruit_seed", ModBlocks.GRAPEFRUIT_PLANT);
+		PINEAPPLE_SEED = new ItemDrinkSeed("pineapple_seed", ModBlocks.PINEAPPLE_PLANT);
+		STRAWBERRY_SEED = new ItemDrinkSeed("strawberry_seed", ModBlocks.STRAWBERRY_PLANT);
+		COCONUT_SEED = new ItemDrinkSeed("coconut_seed", ModBlocks.COCONUT_PLANT);
+		TEA_LEAF_SEED = new ItemDrinkSeed("tea_leaf_seed", ModBlocks.TEA_LEAF_PLANT);
+		WHITE_GRAPE_SEED = new ItemDrinkSeed("white_grape_seed", ModBlocks.WHITE_GRAPE_PLANT);
+		CRANBERRY_SEED = new ItemDrinkSeed("cranberry_seed", ModBlocks.CRANBERRY_PLANT);
+		TOMATO_SEED = new ItemDrinkSeed("tomato_seed", ModBlocks.TOMATO_PLANT);
+		POMEGRANATE_SEED = new ItemDrinkSeed("pomegranate_seed", ModBlocks.POMEGRANATE_PLANT);
+		PEACH_SEED = new ItemDrinkSeed("peach_seed", ModBlocks.PEACH_PLANT);
+		COFFEE_BEAN = new ItemDrinkSeed("coffee_bean", ModBlocks.COFFEE_BEAN_PLANT);
+		MANGO_SEED = new ItemDrinkSeed("mango_seed", ModBlocks.MANGO_PLANT);
 		
 		//Buckets
 		APPLE_JUICE_BUCKET = new ItemDrinkBucket("apple_juice_bucket", ModBlocks.APPLE_JUICE_BLOCK);
 		GRAPE_JUICE_BUCKET = new ItemDrinkBucket("grape_juice_bucket", ModBlocks.GRAPE_JUICE_BLOCK);
+		ORANGE_JUICE_BUCKET = new ItemDrinkBucket("orange_juice_bucket", ModBlocks.ORANGE_JUICE_BLOCK);
 	}
 	
 	public static void register()
@@ -243,6 +231,7 @@ public class ModItems
 		//Buckets
 		registerItem(APPLE_JUICE_BUCKET);
 		registerItem(GRAPE_JUICE_BUCKET);
+		registerItem(ORANGE_JUICE_BUCKET);
 	}
 	
 	private static void registerItem(Item item)

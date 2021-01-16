@@ -1,7 +1,8 @@
-package com.luisxcaliber.caliberdrinksmod.items.seeds;
+package com.luisxcaliber.caliberdrinksmod.items;
 
 import com.luisxcaliber.caliberdrinksmod.CaliberDrinksMod;
-import com.luisxcaliber.caliberdrinksmod.init.ModBlocks;
+
+import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -15,13 +16,16 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.IPlantable;
 
-public class ItemTomatoSeed extends Item implements IPlantable 
+public class ItemDrinkSeed extends Item implements IPlantable 
 {
-	public ItemTomatoSeed(String name) 
+	private final Block plantIn;
+	
+	public ItemDrinkSeed(String name, Block plantInSeed) 
 	{
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(CaliberDrinksMod.tabCaliberDrinksMod);
+		plantIn = plantInSeed;
 	}
 	
     public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
@@ -30,7 +34,7 @@ public class ItemTomatoSeed extends Item implements IPlantable
         IBlockState state = worldIn.getBlockState(pos);
         if (facing == EnumFacing.UP && player.canPlayerEdit(pos.offset(facing), facing, stack) && state.getBlock().canSustainPlant(state, worldIn, pos, EnumFacing.UP, this) && worldIn.isAirBlock(pos.up()))
         {
-            worldIn.setBlockState(pos.up(), ModBlocks.TOMATO_PLANT.getDefaultState());
+            worldIn.setBlockState(pos.up(), plantIn.getDefaultState());
             stack.shrink(1);
             return EnumActionResult.SUCCESS;
         }
@@ -48,6 +52,6 @@ public class ItemTomatoSeed extends Item implements IPlantable
 	@Override
 	public IBlockState getPlant(IBlockAccess world, BlockPos pos) 
 	{
-		return ModBlocks.TOMATO_PLANT.getDefaultState();
+		return plantIn.getDefaultState();
 	}
 }

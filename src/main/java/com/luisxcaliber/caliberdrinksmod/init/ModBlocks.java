@@ -1,21 +1,7 @@
 package com.luisxcaliber.caliberdrinksmod.init;
 
+import com.luisxcaliber.caliberdrinksmod.blocks.BlockDrinkBush;
 import com.luisxcaliber.caliberdrinksmod.blocks.BlockFluid;
-import com.luisxcaliber.caliberdrinksmod.blocks.bushes.BlockCoconutBush;
-import com.luisxcaliber.caliberdrinksmod.blocks.bushes.BlockCoffeeBeanBush;
-import com.luisxcaliber.caliberdrinksmod.blocks.bushes.BlockCranberryBush;
-import com.luisxcaliber.caliberdrinksmod.blocks.bushes.BlockGrapeBush;
-import com.luisxcaliber.caliberdrinksmod.blocks.bushes.BlockGrapefruitBush;
-import com.luisxcaliber.caliberdrinksmod.blocks.bushes.BlockLemonBush;
-import com.luisxcaliber.caliberdrinksmod.blocks.bushes.BlockMangoBush;
-import com.luisxcaliber.caliberdrinksmod.blocks.bushes.BlockOrangeBush;
-import com.luisxcaliber.caliberdrinksmod.blocks.bushes.BlockPeachBush;
-import com.luisxcaliber.caliberdrinksmod.blocks.bushes.BlockPineappleBush;
-import com.luisxcaliber.caliberdrinksmod.blocks.bushes.BlockPomegranateBush;
-import com.luisxcaliber.caliberdrinksmod.blocks.bushes.BlockStrawberryBush;
-import com.luisxcaliber.caliberdrinksmod.blocks.bushes.BlockTeaLeafBush;
-import com.luisxcaliber.caliberdrinksmod.blocks.bushes.BlockTomatoBush;
-import com.luisxcaliber.caliberdrinksmod.blocks.bushes.BlockWhiteGrapeBush;
 import com.luisxcaliber.caliberdrinksmod.blocks.plants.BlockCoconutPlant;
 import com.luisxcaliber.caliberdrinksmod.blocks.plants.BlockCoffeeBeanPlant;
 import com.luisxcaliber.caliberdrinksmod.blocks.plants.BlockCranberryPlant;
@@ -110,21 +96,21 @@ public class ModBlocks
 	static
 	{
 		//Bushes
-		GRAPE_BUSH = new BlockGrapeBush("grape_bush", Material.LEAVES);
-		ORANGE_BUSH = new BlockOrangeBush("orange_bush", Material.LEAVES);
-		LEMON_BUSH = new BlockLemonBush("lemon_bush", Material.LEAVES);
-		GRAPEFRUIT_BUSH = new BlockGrapefruitBush("grapefruit_bush", Material.LEAVES);
-		PINEAPPLE_BUSH = new BlockPineappleBush("pineapple_bush", Material.LEAVES);
-		STRAWBERRY_BUSH = new BlockStrawberryBush("strawberry_bush", Material.LEAVES);
-		COFFEE_BEAN_BUSH = new BlockCoffeeBeanBush("coffee_bean_bush", Material.LEAVES);
-		COCONUT_BUSH = new BlockCoconutBush("coconut_bush", Material.LEAVES);
-		TEA_LEAF_BUSH = new BlockTeaLeafBush("tea_leaf_bush", Material.LEAVES);
-		WHITE_GRAPE_BUSH = new BlockWhiteGrapeBush("white_grape_bush", Material.LEAVES);
-		CRANBERRY_BUSH = new BlockCranberryBush("cranberry_bush", Material.LEAVES);
-		TOMATO_BUSH = new BlockTomatoBush("tomato_bush", Material.LEAVES);
-		POMEGRANATE_BUSH = new BlockPomegranateBush("pomegranate_bush", Material.LEAVES);
-		PEACH_BUSH = new BlockPeachBush("peach_bush", Material.LEAVES);
-		MANGO_BUSH = new BlockMangoBush("mango_bush", Material.LEAVES);
+		GRAPE_BUSH = new BlockDrinkBush("grape_bush", ModItems.GRAPE, Material.LEAVES);
+		ORANGE_BUSH = new BlockDrinkBush("orange_bush", ModItems.ORANGE, Material.LEAVES);
+		LEMON_BUSH = new BlockDrinkBush("lemon_bush", ModItems.LEMON, Material.LEAVES);
+		GRAPEFRUIT_BUSH = new BlockDrinkBush("grapefruit_bush", ModItems.GRAPEFRUIT, Material.LEAVES);
+		PINEAPPLE_BUSH = new BlockDrinkBush("pineapple_bush", ModItems.PINEAPPLE, Material.LEAVES);
+		STRAWBERRY_BUSH = new BlockDrinkBush("strawberry_bush", ModItems.STRAWBERRY, Material.LEAVES);
+		COFFEE_BEAN_BUSH = new BlockDrinkBush("coffee_bean_bush", ModItems.COFFEE_BEAN, Material.LEAVES);
+		COCONUT_BUSH = new BlockDrinkBush("coconut_bush", ModItems.COCONUT, Material.LEAVES);
+		TEA_LEAF_BUSH = new BlockDrinkBush("tea_leaf_bush", ModItems.TEA_LEAF, Material.LEAVES);
+		WHITE_GRAPE_BUSH = new BlockDrinkBush("white_grape_bush", ModItems.WHITE_GRAPE, Material.LEAVES);
+		CRANBERRY_BUSH = new BlockDrinkBush("cranberry_bush", ModItems.CRANBERRY, Material.LEAVES);
+		TOMATO_BUSH = new BlockDrinkBush("tomato_bush", ModItems.TOMATO, Material.LEAVES);
+		POMEGRANATE_BUSH = new BlockDrinkBush("pomegranate_bush", ModItems.POMEGRANATE, Material.LEAVES);
+		PEACH_BUSH = new BlockDrinkBush("peach_bush", ModItems.PEACH, Material.LEAVES);
+		MANGO_BUSH = new BlockDrinkBush("mango_bush", ModItems.MANGO, Material.LEAVES);
 		
 		//Plants
 		GRAPE_PLANT = new BlockGrapePlant("grape_plant");
