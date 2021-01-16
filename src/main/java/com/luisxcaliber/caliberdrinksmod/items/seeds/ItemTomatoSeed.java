@@ -2,8 +2,6 @@ package com.luisxcaliber.caliberdrinksmod.items.seeds;
 
 import com.luisxcaliber.caliberdrinksmod.CaliberDrinksMod;
 import com.luisxcaliber.caliberdrinksmod.init.ModBlocks;
-import com.luisxcaliber.caliberdrinksmod.init.ModItems;
-
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -24,8 +22,6 @@ public class ItemTomatoSeed extends Item implements IPlantable
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(CaliberDrinksMod.tabCaliberDrinksMod);
-		
-		ModItems.ITEMS.add(this);
 	}
 	
     public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)

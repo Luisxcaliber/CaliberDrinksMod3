@@ -1,8 +1,6 @@
 package com.luisxcaliber.caliberdrinksmod.items.food;
 
 import com.luisxcaliber.caliberdrinksmod.CaliberDrinksMod;
-import com.luisxcaliber.caliberdrinksmod.init.ModItems;
-
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.Items;
 import net.minecraft.item.EnumAction;
@@ -19,8 +17,6 @@ public class DrinkBase extends ItemFood
 		setRegistryName(name);
 		setCreativeTab(CaliberDrinksMod.tabCaliberDrinksMod);
 		setAlwaysEdible();
-		
-		ModItems.ITEMS.add(this);
 	}
 	
 	@Override

@@ -1,8 +1,6 @@
 package com.luisxcaliber.caliberdrinksmod.items.food;
 
 import com.luisxcaliber.caliberdrinksmod.CaliberDrinksMod;
-import com.luisxcaliber.caliberdrinksmod.init.ModItems;
-
 import net.minecraft.item.ItemFood;
 
 public class FoodBase extends ItemFood 
@@ -13,7 +11,5 @@ public class FoodBase extends ItemFood
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(CaliberDrinksMod.tabCaliberDrinksMod);
-		
-		ModItems.ITEMS.add(this);
 	}
 }

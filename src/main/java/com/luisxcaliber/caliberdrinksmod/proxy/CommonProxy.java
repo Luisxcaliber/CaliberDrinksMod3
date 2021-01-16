@@ -1,11 +1,23 @@
 package com.luisxcaliber.caliberdrinksmod.proxy;
 
-import net.minecraft.item.Item;
+import net.minecraft.entity.player.EntityPlayer;
 
-public class CommonProxy 
+public class CommonProxy implements ProxyInterface
 {
-	public void registerItemRenderer(Item item, int meta, String Id)
+	public EntityPlayer getClientPlayer()
 	{
-		
+		return null;
+	}
+	
+	@Override
+	public boolean isSinglePlayer() 
+	{
+		return false;
+	}
+
+	@Override
+	public boolean isDedicatedServer() 
+	{
+		return true;
 	}
 }

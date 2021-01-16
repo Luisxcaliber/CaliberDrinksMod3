@@ -16,9 +16,9 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.common.IShearable;
 
-public class BlockBush extends BlockBase implements IShearable 
+public class BlockBush extends BlockBase implements IShearable
 {
-	public BlockBush(String name, Material material) 
+	public BlockBush(String name, Material material)
 	{
 		super(name, material);
 		
@@ -29,18 +29,18 @@ public class BlockBush extends BlockBase implements IShearable
 	}
 
 	@Override
-	public boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) 
+	public boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos)
 	{
 		return false;
 	}
 
 	@Override
-	public List<ItemStack> onSheared(ItemStack item, IBlockAccess world, BlockPos pos, int fortune) 
+	public List<ItemStack> onSheared(ItemStack item, IBlockAccess world, BlockPos pos, int fortune)
 	{
 		return Arrays.asList(new ItemStack(this, 1));
 	}
 	
-	public Item getItemDropped(IBlockState state, Random rand, int fortune) 
+	public Item getItemDropped(IBlockState state, Random rand, int fortune)
 	{
 		return null;
 	}
