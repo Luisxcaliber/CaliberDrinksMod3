@@ -1,6 +1,7 @@
 package com.luisxcaliber.caliberdrinksmod.items.food;
 
 import com.luisxcaliber.caliberdrinksmod.CaliberDrinksMod;
+
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.Items;
 import net.minecraft.item.EnumAction;

@@ -18,14 +18,14 @@ import net.minecraftforge.common.IPlantable;
 
 public class ItemDrinkSeed extends Item implements IPlantable 
 {
-	private final Block plantIn;
+	private final Block plantBlock;
 	
-	public ItemDrinkSeed(String name, Block plantInSeed) 
+	public ItemDrinkSeed(String name, Block plantInBlock) 
 	{
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(CaliberDrinksMod.tabCaliberDrinksMod);
-		plantIn = plantInSeed;
+		plantBlock = plantInBlock;
 	}
 	
     public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
@@ -34,15 +34,14 @@ public class ItemDrinkSeed extends Item implements IPlantable
         IBlockState state = worldIn.getBlockState(pos);
         if (facing == EnumFacing.UP && player.canPlayerEdit(pos.offset(facing), facing, stack) && state.getBlock().canSustainPlant(state, worldIn, pos, EnumFacing.UP, this) && worldIn.isAirBlock(pos.up()))
         {
-            worldIn.setBlockState(pos.up(), plantIn.getDefaultState());
+            worldIn.setBlockState(pos.up(), plantBlock.getDefaultState());
             stack.shrink(1);
             return EnumActionResult.SUCCESS;
         }
         else return EnumActionResult.FAIL;
 
     }
-
-
+    
 	@Override
 	public EnumPlantType getPlantType(IBlockAccess world, BlockPos pos) 
 	{
@@ -52,6 +51,6 @@ public class ItemDrinkSeed extends Item implements IPlantable
 	@Override
 	public IBlockState getPlant(IBlockAccess world, BlockPos pos) 
 	{
-		return plantIn.getDefaultState();
+		return plantBlock.getDefaultState();
 	}
 }

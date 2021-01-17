@@ -8,7 +8,6 @@ import net.minecraft.world.World;
 
 public class DrinkMilk extends DrinkBase 
 {
-
 	public DrinkMilk(String name, int amount, float saturation, boolean isWolfFood) 
 	{
 		super(name, amount, saturation, isWolfFood);

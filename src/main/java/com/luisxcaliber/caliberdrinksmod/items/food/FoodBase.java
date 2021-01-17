@@ -1,6 +1,7 @@
 package com.luisxcaliber.caliberdrinksmod.items.food;
 
 import com.luisxcaliber.caliberdrinksmod.CaliberDrinksMod;
+
 import net.minecraft.item.ItemFood;
 
 public class FoodBase extends ItemFood 

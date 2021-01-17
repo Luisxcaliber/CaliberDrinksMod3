@@ -14,11 +14,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.common.IShearable;
 
-public class BlockDrinkBush extends BlockBase implements IShearable
+public class BlockDrinkBush extends BlockBase implements IShearable 
 {
-	private final Item itemdropIn;
+	private final Item itemDropIn;
 	
-	public BlockDrinkBush(String name, Item itemdrop, Material material)
+	public BlockDrinkBush(String name, Item itemDrop, Material material)
 	{
 		super(name, material);
 		
@@ -26,7 +26,7 @@ public class BlockDrinkBush extends BlockBase implements IShearable
 		setHardness(0.2f);
 		setResistance(0.2f);
 		setLightOpacity(1);
-		itemdropIn = itemdrop;
+		itemDropIn = itemDrop;
 	}
 
 	@Override
@@ -43,7 +43,7 @@ public class BlockDrinkBush extends BlockBase implements IShearable
 	
 	public Item getItemDropped(IBlockState state, Random rand, int fortune)
 	{
-		return itemdropIn;
+		return itemDropIn;
 	}
 	
 	public int quantityDropped(Random rand)

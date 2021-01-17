@@ -16,7 +16,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_MC_VERSIONS)
-public class CaliberDrinksMod
+public class CaliberDrinksMod 
 {
 	@Instance
 	public static CaliberDrinksMod instance;
@@ -25,19 +25,19 @@ public class CaliberDrinksMod
 	public static CommonProxy proxy;
 	
 	@EventHandler
-	public static void PreInit(FMLPreInitializationEvent event)
+	public static void preInit(FMLPreInitializationEvent event)
 	{
 		RegistryHandler.init();
 	}
 	
 	@EventHandler
-	public static void Init(FMLInitializationEvent event)
+	public static void init(FMLInitializationEvent event)
 	{
 		
 	}
 	
 	@EventHandler
-	public static void PostInit(FMLPostInitializationEvent event)
+	public static void postInit(FMLPostInitializationEvent event)
 	{
 		
 	}
