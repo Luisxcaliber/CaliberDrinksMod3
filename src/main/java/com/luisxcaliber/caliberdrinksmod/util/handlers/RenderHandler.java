@@ -16,7 +16,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:apple_juice_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "apple_juice_fluid");
 			}
 		});
 		
@@ -25,7 +25,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:grape_juice_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "grape_juice_fluid");
 			}
 		});
 		
@@ -34,7 +34,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:orange_juice_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "orange_juice_fluid");
 			}
 		});
 		
@@ -43,7 +43,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:fruit_punch_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "fruit_punch_fluid");
 			}
 		});
 		
@@ -52,7 +52,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:lemonade_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "lemonade_fluid");
 			}
 		});
 		
@@ -61,7 +61,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:beetroot_juice_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "beetroot_juice_fluid");
 			}
 		});
 		
@@ -70,7 +70,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:pink_lemonade_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "pink_lemonade_fluid");
 			}
 		});
 		
@@ -79,7 +79,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:grapefruit_juice_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "grapefruit_juice_fluid");
 			}
 		});
 		
@@ -88,7 +88,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:pineapple_juice_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "pineapple_juice_fluid");
 			}
 		});
 		
@@ -97,7 +97,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:milk_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "milk_fluid");
 			}
 		});
 		
@@ -106,7 +106,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:chocolate_milk_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "chocolate_milk_fluid");
 			}
 		});
 		
@@ -115,7 +115,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:strawberry_milk_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "strawberry_milk_fluid");
 			}
 		});
 		
@@ -124,7 +124,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:carrot_juice_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "carrot_juice_fluid");
 			}
 		});
 		
@@ -133,7 +133,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:strawberry_juice_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "strawberry_juice_fluid");
 			}
 		});
 		
@@ -142,7 +142,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:watermelon_juice_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "watermelon_juice_fluid");
 			}
 		});
 		
@@ -151,7 +151,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:hot_chocolate_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "hot_chocolate_fluid");
 			}
 		});
 		
@@ -160,7 +160,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:coconut_water_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "coconut_water_fluid");
 			}
 		});
 		
@@ -169,7 +169,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:tea_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "tea_fluid");
 			}
 		});
 		
@@ -178,7 +178,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:iced_tea_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "iced_tea_fluid");
 			}
 		});
 		
@@ -187,7 +187,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:green_tea_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "green_tea_fluid");
 			}
 		});
 		
@@ -196,7 +196,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:black_tea_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "black_tea_fluid");
 			}
 		});
 		
@@ -205,7 +205,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:white_tea_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "white_tea_fluid");
 			}
 		});
 		
@@ -214,7 +214,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:yellow_tea_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "yellow_tea_fluid");
 			}
 		});
 		
@@ -223,7 +223,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:lemon_tea_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "lemon_tea_fluid");
 			}
 		});
 		
@@ -232,7 +232,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:white_grape_juice_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "white_grape_juice_fluid");
 			}
 		});
 		
@@ -241,7 +241,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:cranberry_juice_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "cranberry_juice_fluid");
 			}
 		});
 		
@@ -250,7 +250,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:tomato_juice_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "tomato_juice_fluid");
 			}
 		});
 		
@@ -259,7 +259,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:pomegranate_juice_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "pomegranate_juice_fluid");
 			}
 		});
 		
@@ -268,7 +268,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:peach_juice_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "peach_juice_fluid");
 			}
 		});
 		
@@ -277,7 +277,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:mango_juice_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "mango_juice_fluid");
 			}
 		});
 		
@@ -286,7 +286,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:coffee_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "coffee_fluid");
 			}
 		});
 		
@@ -295,7 +295,7 @@ public class RenderHandler
 			@Override
 			protected ModelResourceLocation getModelResourceLocation(IBlockState state)
 			{
-				return new ModelResourceLocation("caliberdm:iced_coffee_fluid", "fluid");
+				return new ModelResourceLocation("caliberdm:fluid_drink", "iced_coffee_fluid");
 			}
 		});
 	}

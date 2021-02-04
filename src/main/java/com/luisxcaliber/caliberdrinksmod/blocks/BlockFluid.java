@@ -5,11 +5,12 @@ import net.minecraftforge.fluids.BlockFluidClassic;
 import net.minecraftforge.fluids.Fluid;
 
 public class BlockFluid extends BlockFluidClassic 
-{
+{	
 	public BlockFluid(String name, Fluid fluid, Material material)
 	{
 		super(fluid, material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 	}
+	//Note: Make so if player right clicks with a bucket return the corresponding fluid bucket
 }

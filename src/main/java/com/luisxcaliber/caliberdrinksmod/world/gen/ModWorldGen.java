@@ -30,7 +30,7 @@ public class ModWorldGen implements IWorldGenerator
 	{
 			
 	}
-	
+	//Note: Figure out world generation for bushes
 	private void generateOverworld(World world, Random rand, int blockX, int blockZ) 
 	{
 		WorldGenBush.generateBush();

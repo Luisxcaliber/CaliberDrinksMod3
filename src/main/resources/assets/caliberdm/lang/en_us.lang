@@ -32,8 +32,6 @@ item.tomato_juice.name=Tomato Juice
 item.pomegranate_juice.name=Pomegranate Juice
 item.peach_juice.name=Peach Juice
 item.mango_juice.name=Mango Juice
-
-//Drinks With Effects
 item.coffee.name=Coffee
 item.iced_coffee.name=Iced Coffee
 
@@ -54,10 +52,8 @@ item.pomegranate.name=Pomegranate
 item.peach.name=Peach
 item.mango.name=Mango
 
-//Buckets
+//Bucket
 item.apple_juice_bucket.name=Apple Juice Bucket
-item.grape_juice_bucket.name=Grape Juice Bucket
-item.orange_juice_bucket.name=Orange Juice Bucket
 
 //Plants
 tile.grape_plant.name=Grape Plant

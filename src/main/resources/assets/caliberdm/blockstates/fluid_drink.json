@@ -1,0 +1,232 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"model": "forge:fluid"
+	},
+	"variants": {
+		"apple_juice_fluid": [
+			{
+				"custom": {
+					"fluid": "apple_juice_fluid"
+				}
+			}
+		],
+		"grape_juice_fluid": [
+			{
+				"custom": {
+					"fluid": "grape_juice_fluid"
+				}
+			}
+		],
+		"orange_juice_fluid": [
+			{
+				"custom": {
+					"fluid": "orange_juice_fluid"
+				}
+			}
+		],
+		"fruit_punch_fluid": [
+			{
+				"custom": {
+					"fluid": "fruit_punch_fluid"
+				}
+			}
+		],
+		"lemonade_fluid": [
+			{
+				"custom": {
+					"fluid": "lemonade_fluid"
+				}
+			}
+		],
+		"beetroot_juice_fluid": [
+			{
+				"custom": {
+					"fluid": "beetroot_juice_fluid"
+				}
+			}
+		],
+		"pink_lemonade_fluid": [
+			{
+				"custom": {
+					"fluid": "pink_lemonade_fluid"
+				}
+			}
+		],
+		"grapefruit_juice_fluid": [
+			{
+				"custom": {
+					"fluid": "grapefruit_juice_fluid"
+				}
+			}
+		],
+		"pineapple_juice_fluid": [
+			{
+				"custom": {
+					"fluid": "pineapple_juice_fluid"
+				}
+			}
+		],
+		"milk_fluid": [
+			{
+				"custom": {
+					"fluid": "milk_fluid"
+				}
+			}
+		],
+		"chocolate_milk_fluid": [
+			{
+				"custom": {
+					"fluid": "chocolate_milk_fluid"
+				}
+			}
+		],
+		"strawberry_milk_fluid": [
+			{
+				"custom": {
+					"fluid": "strawberry_milk_fluid"
+				}
+			}
+		],
+		"carrot_juice_fluid": [
+			{
+				"custom": {
+					"fluid": "carrot_juice_fluid"
+				}
+			}
+		],
+		"strawberry_juice_fluid": [
+			{
+				"custom": {
+					"fluid": "strawberry_juice_fluid"
+				}
+			}
+		],
+		"watermelon_juice_fluid": [
+			{
+				"custom": {
+					"fluid": "watermelon_juice_fluid"
+				}
+			}
+		],
+		"hot_chocolate_fluid": [
+			{
+				"custom": {
+					"fluid": "hot_chocolate_fluid"
+				}
+			}
+		],
+		"coconut_water_fluid": [
+			{
+				"custom": {
+					"fluid": "coconut_water_fluid"
+				}
+			}
+		],
+		"tea_fluid": [
+			{
+				"custom": {
+					"fluid": "tea_fluid"
+				}
+			}
+		],
+		"iced_tea_fluid": [
+			{
+				"custom": {
+					"fluid": "iced_tea_fluid"
+				}
+			}
+		],
+		"green_tea_fluid": [
+			{
+				"custom": {
+					"fluid": "green_tea_fluid"
+				}
+			}
+		],
+		"black_tea_fluid": [
+			{
+				"custom": {
+					"fluid": "black_tea_fluid"
+				}
+			}
+		],
+		"white_tea_fluid": [
+			{
+				"custom": {
+					"fluid": "white_tea_fluid"
+				}
+			}
+		],
+		"yellow_tea_fluid": [
+			{
+				"custom": {
+					"fluid": "yellow_tea_fluid"
+				}
+			}
+		],
+		"lemon_tea_fluid": [
+			{
+				"custom": {
+					"fluid": "lemon_tea_fluid"
+				}
+			}
+		],
+		"white_grape_juice_fluid": [
+			{
+				"custom": {
+					"fluid": "white_grape_juice_fluid"
+				}
+			}
+		],
+		"cranberry_juice_fluid": [
+			{
+				"custom": {
+					"fluid": "cranberry_juice_fluid"
+				}
+			}
+		],
+		"tomato_juice_fluid": [
+			{
+				"custom": {
+					"fluid": "tomato_juice_fluid"
+				}
+			}
+		],
+		"pomegranate_juice_fluid": [
+			{
+				"custom": {
+					"fluid": "pomegranate_juice_fluid"
+				}
+			}
+		],
+		"peach_juice_fluid": [
+			{
+				"custom": {
+					"fluid": "peach_juice_fluid"
+				}
+			}
+		],
+		"mango_juice_fluid": [
+			{
+				"custom": {
+					"fluid": "mango_juice_fluid"
+				}
+			}
+		],
+		"coffee_fluid": [
+			{
+				"custom": {
+					"fluid": "coffee_fluid"
+				}
+			}
+		],
+		"iced_coffee_fluid": [
+			{
+				"custom": {
+					"fluid": "iced_coffee_fluid"
+				}
+			}
+		]
+	}
+}

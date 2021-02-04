@@ -81,8 +81,6 @@ public class ModItems
 	
 	//Buckets
 	public static final Item APPLE_JUICE_BUCKET;
-	public static final Item GRAPE_JUICE_BUCKET;
-	public static final Item ORANGE_JUICE_BUCKET;
 	
 	static
 	{
@@ -155,8 +153,6 @@ public class ModItems
 		
 		//Buckets
 		APPLE_JUICE_BUCKET = new ItemDrinkBucket("apple_juice_bucket", ModBlocks.APPLE_JUICE_BLOCK);
-		GRAPE_JUICE_BUCKET = new ItemDrinkBucket("grape_juice_bucket", ModBlocks.GRAPE_JUICE_BLOCK);
-		ORANGE_JUICE_BUCKET = new ItemDrinkBucket("orange_juice_bucket", ModBlocks.ORANGE_JUICE_BLOCK);
 	}
 	
 	public static void register()
@@ -230,8 +226,6 @@ public class ModItems
 		
 		//Buckets
 		registerItem(APPLE_JUICE_BUCKET);
-		registerItem(GRAPE_JUICE_BUCKET);
-		registerItem(ORANGE_JUICE_BUCKET);
 	}
 	
 	private static void registerItem(Item item)

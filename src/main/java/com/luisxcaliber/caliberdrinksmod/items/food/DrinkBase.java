@@ -20,15 +20,14 @@ public class DrinkBase extends ItemFood
 		setAlwaysEdible();
 	}
 	
-	@Override
-	 public EnumAction getItemUseAction(ItemStack stack)
-   {
-       return EnumAction.DRINK;
-   }
+    @Override
+    public EnumAction getItemUseAction(ItemStack stack)
+    {
+        return EnumAction.DRINK;
+    }
 	
 	public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving)
 	{
-		super.onItemUseFinish(stack, worldIn, entityLiving);
 		return new ItemStack(Items.GLASS_BOTTLE);
 	}
 }
