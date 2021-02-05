@@ -81,6 +81,37 @@ public class ModItems
 	
 	//Buckets
 	public static final Item APPLE_JUICE_BUCKET;
+	public static final Item GRAPE_JUICE_BUCKET;
+	public static final Item ORANGE_JUICE_BUCKET;
+	public static final Item FRUIT_PUNCH_BUCKET;
+	public static final Item LEMONADE_BUCKET;
+	public static final Item BEETROOT_JUICE_BUCKET;
+	public static final Item PINK_LEMONADE_BUCKET;
+	public static final Item GRAPEFRUIT_JUICE_BUCKET;
+	public static final Item PINEAPPLE_JUICE_BUCKET;
+	public static final Item CHOCOLATE_MILK_BUCKET;
+	public static final Item STRAWBERRY_MILK_BUCKET;
+	public static final Item CARROT_JUICE_BUCKET;
+	public static final Item STRAWBERRY_JUICE_BUCKET;
+	public static final Item WATERMELON_JUICE_BUCKET;
+	public static final Item HOT_CHOCOLATE_BUCKET;
+	public static final Item COCONUT_WATER_BUCKET;
+	public static final Item TEA_BUCKET;
+	public static final Item ICED_TEA_BUCKET;
+	public static final Item GREEN_TEA_BUCKET;
+	public static final Item BLACK_TEA_BUCKET;
+	public static final Item WHITE_TEA_BUCKET;
+	public static final Item YELLOW_TEA_BUCKET;
+	public static final Item LEMON_TEA_BUCKET;
+	public static final Item WHITE_GRAPE_JUICE_BUCKET;
+	public static final Item CRANBERRY_JUICE_BUCKET;
+	public static final Item TOMATO_JUICE_BUCKET;
+	public static final Item POMEGRANATE_JUICE_BUCKET;
+	public static final Item PEACH_JUICE_BUCKET;
+	public static final Item MANGO_JUICE_BUCKET;
+	public static final Item COFFEE_BUCKET;
+	public static final Item ICED_COFFEE_BUCKET;
+	public static final Item TEMP_MILK;
 	
 	static
 	{
@@ -153,6 +184,37 @@ public class ModItems
 		
 		//Buckets
 		APPLE_JUICE_BUCKET = new ItemDrinkBucket("apple_juice_bucket", ModBlocks.APPLE_JUICE_BLOCK);
+		GRAPE_JUICE_BUCKET = new ItemDrinkBucket("grape_juice_bucket", ModBlocks.GRAPE_JUICE_BLOCK);
+		ORANGE_JUICE_BUCKET = new ItemDrinkBucket("orange_juice_bucket", ModBlocks.ORANGE_JUICE_BLOCK);
+		FRUIT_PUNCH_BUCKET = new ItemDrinkBucket("fruit_punch_bucket", ModBlocks.FRUIT_PUNCH_BLOCK);
+		LEMONADE_BUCKET = new ItemDrinkBucket("lemonade_bucket", ModBlocks.LEMONADE_BLOCK);
+		BEETROOT_JUICE_BUCKET = new ItemDrinkBucket("beetroot_juice_bucket", ModBlocks.BEETROOT_JUICE_BLOCK);
+		PINK_LEMONADE_BUCKET = new ItemDrinkBucket("pink_lemonade_bucket", ModBlocks.PINK_LEMONADE_BLOCK);
+		GRAPEFRUIT_JUICE_BUCKET = new ItemDrinkBucket("grapefruit_juice_bucket", ModBlocks.GRAPEFRUIT_JUICE_BLOCK);
+		PINEAPPLE_JUICE_BUCKET = new ItemDrinkBucket("pineapple_juice_bucket", ModBlocks.PINEAPPLE_JUICE_BLOCK);
+		CHOCOLATE_MILK_BUCKET = new ItemDrinkBucket("chocolate_milk_bucket", ModBlocks.CHOCOLATE_MILK_BLOCK);
+		STRAWBERRY_MILK_BUCKET = new ItemDrinkBucket("strawberry_milk_bucket", ModBlocks.STRAWBERRY_MILK_BLOCK);
+		CARROT_JUICE_BUCKET = new ItemDrinkBucket("carrot_juice_bucket", ModBlocks.CARROT_JUICE_BLOCK);
+		STRAWBERRY_JUICE_BUCKET = new ItemDrinkBucket("strawberry_juice_bucket", ModBlocks.STRAWBERRY_JUICE_BLOCK);
+		WATERMELON_JUICE_BUCKET = new ItemDrinkBucket("watermelon_juice_bucket", ModBlocks.WATERMELON_JUICE_BLOCK);
+		HOT_CHOCOLATE_BUCKET = new ItemDrinkBucket("hot_chocolate_bucket", ModBlocks.HOT_CHOCOLATE_BLOCK);
+		COCONUT_WATER_BUCKET = new ItemDrinkBucket("coconut_water_bucket", ModBlocks.COCONUT_WATER_BLOCK);
+		TEA_BUCKET = new ItemDrinkBucket("tea_bucket", ModBlocks.TEA_BLOCK);
+		ICED_TEA_BUCKET = new ItemDrinkBucket("iced_tea_bucket", ModBlocks.ICED_TEA_BLOCK);
+		GREEN_TEA_BUCKET = new ItemDrinkBucket("green_tea_bucket", ModBlocks.GREEN_TEA_BLOCK);
+		BLACK_TEA_BUCKET = new ItemDrinkBucket("black_tea_bucket", ModBlocks.BLACK_TEA_BLOCK);
+		WHITE_TEA_BUCKET = new ItemDrinkBucket("white_tea_bucket", ModBlocks.WHITE_TEA_BLOCK);
+		YELLOW_TEA_BUCKET = new ItemDrinkBucket("yellow_tea_bucket", ModBlocks.YELLOW_TEA_BLOCK);
+		LEMON_TEA_BUCKET = new ItemDrinkBucket("lemon_tea_bucket", ModBlocks.LEMON_TEA_BLOCK);
+		WHITE_GRAPE_JUICE_BUCKET = new ItemDrinkBucket("white_grape_juice_bucket", ModBlocks.WHITE_GRAPE_JUICE_BLOCK);
+		CRANBERRY_JUICE_BUCKET = new ItemDrinkBucket("cranberry_juice_bucket", ModBlocks.CRANBERRY_JUICE_BLOCK);
+		TOMATO_JUICE_BUCKET = new ItemDrinkBucket("tomato_juice_bucket", ModBlocks.TOMATO_JUICE_BLOCK);
+		POMEGRANATE_JUICE_BUCKET = new ItemDrinkBucket("pomegranate_juice_bucket", ModBlocks.POMEGRANATE_JUICE_BLOCK);
+		PEACH_JUICE_BUCKET = new ItemDrinkBucket("peach_juice_bucket", ModBlocks.PEACH_JUICE_BLOCK);
+		MANGO_JUICE_BUCKET = new ItemDrinkBucket("mango_juice_bucket", ModBlocks.MANGO_JUICE_BLOCK);
+		COFFEE_BUCKET = new ItemDrinkBucket("coffee_bucket", ModBlocks.COFFEE_BLOCK);
+		ICED_COFFEE_BUCKET = new ItemDrinkBucket("iced_coffee_bucket", ModBlocks.ICED_COFFEE_BLOCK);
+		TEMP_MILK = new ItemDrinkBucket("temp_milk", ModBlocks.MILK_BLOCK);
 	}
 	
 	public static void register()
@@ -226,6 +288,37 @@ public class ModItems
 		
 		//Buckets
 		registerItem(APPLE_JUICE_BUCKET);
+		registerItem(GRAPE_JUICE_BUCKET);
+		registerItem(ORANGE_JUICE_BUCKET);
+		registerItem(FRUIT_PUNCH_BUCKET);
+		registerItem(LEMONADE_BUCKET);
+		registerItem(BEETROOT_JUICE_BUCKET);
+		registerItem(PINK_LEMONADE_BUCKET);
+		registerItem(GRAPEFRUIT_JUICE_BUCKET);
+		registerItem(PINEAPPLE_JUICE_BUCKET);
+		registerItem(CHOCOLATE_MILK_BUCKET);
+		registerItem(STRAWBERRY_MILK_BUCKET);
+		registerItem(CARROT_JUICE_BUCKET);
+		registerItem(STRAWBERRY_JUICE_BUCKET);
+		registerItem(WATERMELON_JUICE_BUCKET);
+		registerItem(HOT_CHOCOLATE_BUCKET);
+		registerItem(COCONUT_WATER_BUCKET);
+		registerItem(TEA_BUCKET);
+		registerItem(ICED_TEA_BUCKET);
+		registerItem(GREEN_TEA_BUCKET);
+		registerItem(BLACK_TEA_BUCKET);
+		registerItem(WHITE_TEA_BUCKET);
+		registerItem(YELLOW_TEA_BUCKET);
+		registerItem(LEMON_TEA_BUCKET);
+		registerItem(WHITE_GRAPE_JUICE_BUCKET);
+		registerItem(CRANBERRY_JUICE_BUCKET);
+		registerItem(TOMATO_JUICE_BUCKET);
+		registerItem(POMEGRANATE_JUICE_BUCKET);
+		registerItem(PEACH_JUICE_BUCKET);
+		registerItem(MANGO_JUICE_BUCKET);
+		registerItem(COFFEE_BUCKET);
+		registerItem(ICED_COFFEE_BUCKET);
+		registerItem(TEMP_MILK);
 	}
 	
 	private static void registerItem(Item item)
