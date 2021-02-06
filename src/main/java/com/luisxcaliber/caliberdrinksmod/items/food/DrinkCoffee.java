@@ -16,12 +16,12 @@ public class DrinkCoffee extends DrinkBase
 	
 	public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving)
 	{
-		super.onItemUseFinish(stack, worldIn, entityLiving);
 		if(!worldIn.isRemote)
 		{
 			entityLiving.addPotionEffect(new PotionEffect(MobEffects.SPEED, (60*20), 0, false, true));
 			entityLiving.addPotionEffect(new PotionEffect(MobEffects.HASTE, (60*20), 0, false, true));
 		}
+		
 		return new ItemStack(Items.GLASS_BOTTLE);
 	}
 }

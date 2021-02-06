@@ -15,8 +15,8 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 version = '3.0'
-group = 'com.luisxcaliber.caliberdrinksmod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'CaliberDrinksMod'
+group = 'com.luisxcaliber' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'caliberdrinksmod'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
@@ -85,12 +85,12 @@ dependencies {
 jar {
     manifest {
         attributes([
-            "Specification-Title": "examplemod",
-            "Specification-Vendor": "examplemodsareus",
+            "Specification-Title": "caliberdrinksmod",
+            "Specification-Vendor": "caliberdrinksmod",
             "Specification-Version": "1", // We are version 1 of ourselves
             "Implementation-Title": project.name,
             "Implementation-Version": "${version}",
-            "Implementation-Vendor" :"examplemodsareus",
+            "Implementation-Vendor" :"caliberdrinksmod",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }

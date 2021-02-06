@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "caliberdrinksmod:blocks/white_grape_plant2"
+    }
+}

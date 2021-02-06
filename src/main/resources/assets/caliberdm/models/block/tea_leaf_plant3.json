@@ -1,6 +1,0 @@
-{
-    "parent": "block/crop",
-    "textures": {
-        "crop": "caliberdm:blocks/tea_leaf_plant3"
-    }
-}

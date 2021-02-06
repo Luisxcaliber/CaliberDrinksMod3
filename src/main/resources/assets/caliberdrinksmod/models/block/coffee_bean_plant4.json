@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "caliberdrinksmod:blocks/coffee_bean_plant4"
+    }
+}

@@ -3,7 +3,6 @@ package com.luisxcaliber.caliberdrinksmod.items.food;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 public class DrinkMilk extends DrinkBase 
@@ -15,12 +14,7 @@ public class DrinkMilk extends DrinkBase
 	
 	public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving)
 	{
-		super.onItemUseFinish(stack, worldIn, entityLiving);
-	    for(PotionEffect effect : entityLiving.getActivePotionEffects())
-	    {
-	        entityLiving.removePotionEffect(effect.getPotion());
-	    }
-	    
+	    entityLiving.clearActivePotions();
 		return new ItemStack(Items.GLASS_BOTTLE);
 	}
 }
