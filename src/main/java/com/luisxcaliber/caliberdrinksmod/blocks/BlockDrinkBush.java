@@ -21,7 +21,6 @@ public class BlockDrinkBush extends BlockBase implements IShearable
 	public BlockDrinkBush(String name, Item itemDrop, Material material)
 	{
 		super(name, material);
-		
 		setSoundType(SoundType.PLANT);
 		setHardness(0.2f);
 		setResistance(0.2f);

@@ -18,10 +18,15 @@ public class ModWorldGen implements IWorldGenerator
 		switch(world.provider.getDimension())
 		{
 		case -1: generateNether(world, random, blockX, blockZ);
+		
 		break;
+		
 		case 0: generateOverworld(world, random, blockX, blockZ);
+		
 		break;
+		
 		case 1: generateEnd(world, random, blockX, blockZ);
+		
 		break;
 		}
 	}
