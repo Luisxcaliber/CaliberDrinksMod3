@@ -6,6 +6,7 @@ import com.luisxcaliber.caliberdrinksmod.util.Reference;
 import com.luisxcaliber.caliberdrinksmod.util.handlers.RegistryHandler;
 
 import net.minecraft.creativetab.CreativeTabs;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;

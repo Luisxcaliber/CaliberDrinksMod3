@@ -1,5 +1,6 @@
 package com.luisxcaliber.caliberdrinksmod.init;
 
+import com.luisxcaliber.caliberdrinksmod.blocks.BlockBlender;
 import com.luisxcaliber.caliberdrinksmod.blocks.BlockDrinkBush;
 import com.luisxcaliber.caliberdrinksmod.blocks.BlockFluid;
 import com.luisxcaliber.caliberdrinksmod.blocks.plants.BlockCoconutPlant;
@@ -93,6 +94,9 @@ public class ModBlocks
 	public static final Block COFFEE_BLOCK;
 	public static final Block ICED_COFFEE_BLOCK;
 	
+	//Blenders
+	public static final Block BLUE_BLENDER;
+	
 	static
 	{
 		//Bushes
@@ -162,6 +166,9 @@ public class ModBlocks
 		MANGO_JUICE_BLOCK = new BlockFluid("mango_juice_fluid", ModFluids.MANGO_JUICE_FLUID, Material.WATER);
 		COFFEE_BLOCK = new BlockFluid("coffee_fluid", ModFluids.COFFEE_FLUID, Material.WATER);
 		ICED_COFFEE_BLOCK = new BlockFluid("iced_coffee_fluid", ModFluids.ICED_COFFEE_FLUID, Material.WATER);
+		
+		//Blenders
+		BLUE_BLENDER = new BlockBlender("blue_blender", Material.GLASS);
 	}
 	
 	public static void register()
@@ -233,6 +240,9 @@ public class ModBlocks
 		registerBlock(MANGO_JUICE_BLOCK);
 		registerBlock(COFFEE_BLOCK);
 		registerBlock(ICED_COFFEE_BLOCK);
+		
+		//Blenders
+		registerBlock(BLUE_BLENDER);
 	}
 	
 	private static void registerBlock(Block block)

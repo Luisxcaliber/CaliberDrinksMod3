@@ -185,3 +185,6 @@ fluid.peach_juice_fluid=Peach Juice
 fluid.mango_juice_fluid=Mango Juice
 fluid.coffee_fluid=Coffee
 fluid.iced_coffee_fluid=Iced Coffee
+
+//Blenders
+tile.blue_blender.name=Blue Blender
