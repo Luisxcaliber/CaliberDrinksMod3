@@ -39,9 +39,27 @@ public String structureName;
 		
 		if(template != null)
 		{
+			Random rand = new Random();
+			int r = rand.nextInt(40);
 			IBlockState state = world.getBlockState(pos);
 			world.notifyBlockUpdate(pos, state, state, 3);
-			template.addBlocksToWorldChunk(world, pos, settings);
+			//Rotation
+			if(r <= 40 && r >= 30)
+			{
+				template.addBlocksToWorldChunk(world, pos, settings);
+			}
+			else if(r <= 20 && r >= 10)
+			{
+				template.addBlocksToWorldChunk(world, pos, settings1);
+			}
+			else if(r <= 30 && r >= 20)
+			{
+				template.addBlocksToWorldChunk(world, pos, settings2);
+			}
+			else if(r <= 10 && r >= 0)
+			{
+				template.addBlocksToWorldChunk(world, pos, settings3);
+			}
 		}
 	}
 }

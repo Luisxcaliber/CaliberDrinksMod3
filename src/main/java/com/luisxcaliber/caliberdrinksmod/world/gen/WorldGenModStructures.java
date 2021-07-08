@@ -23,6 +23,15 @@ public class WorldGenModStructures implements IWorldGenerator
 {
 	public final WorldGenStructure GRAPEBUSH1 = new WorldGenStructure("grapebush1");
 	public final WorldGenStructure GRAPEBUSH2 = new WorldGenStructure("grapebush2");
+	public final WorldGenStructure GRAPEBUSH3 = new WorldGenStructure("grapebush3");
+	
+	public final WorldGenStructure ORANGEBUSH1 = new WorldGenStructure("orangebush1");
+	public final WorldGenStructure ORANGEBUSH2 = new WorldGenStructure("orangebush2");
+	public final WorldGenStructure ORANGEBUSH3 = new WorldGenStructure("orangebush3");
+	
+	public final WorldGenStructure LEMONBUSH1 = new WorldGenStructure("lemonbush1");
+	public final WorldGenStructure LEMONBUSH2 = new WorldGenStructure("lemonbush2");
+	public final WorldGenStructure LEMONBUSH3 = new WorldGenStructure("lemonbush3");
 	
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) 
@@ -35,8 +44,17 @@ public class WorldGenModStructures implements IWorldGenerator
 			
 		case 0:
 			
-			generateStructure(GRAPEBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomePlains.class);
-			generateStructure(GRAPEBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomePlains.class ,BiomeForest.class);
+			generateStructure(GRAPEBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomePlains.class, BiomeForest.class);
+			generateStructure(GRAPEBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			generateStructure(GRAPEBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			
+			generateStructure(ORANGEBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomePlains.class, BiomeForest.class);
+			generateStructure(ORANGEBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			generateStructure(ORANGEBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			
+			generateStructure(LEMONBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomePlains.class, BiomeForest.class);
+			generateStructure(LEMONBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			generateStructure(LEMONBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
 			
 			break;
 			
