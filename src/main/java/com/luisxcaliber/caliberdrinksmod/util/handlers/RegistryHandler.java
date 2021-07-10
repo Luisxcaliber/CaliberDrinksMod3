@@ -94,7 +94,7 @@ public class RegistryHandler
 		}
 	}
 	
-	public static void init()
+	public static void preInit()
 	{
 		ModFluids.register();
 		GameRegistry.registerWorldGenerator(new WorldGenModStructures(), 3);

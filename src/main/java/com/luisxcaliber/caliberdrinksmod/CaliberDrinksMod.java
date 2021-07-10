@@ -29,7 +29,7 @@ public class CaliberDrinksMod
 	@EventHandler
 	public static void preInit(FMLPreInitializationEvent event)
 	{
-		RegistryHandler.init();
+		RegistryHandler.preInit();
 	}
 	
 	@EventHandler
