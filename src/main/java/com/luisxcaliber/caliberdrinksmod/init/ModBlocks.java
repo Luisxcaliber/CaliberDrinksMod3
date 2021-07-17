@@ -95,6 +95,7 @@ public class ModBlocks
 	public static final Block ICED_COFFEE_BLOCK;
 	
 	//Blenders
+	public static final Block WHITE_BLENDER;
 	public static final Block BLUE_BLENDER;
 	
 	static
@@ -134,40 +135,41 @@ public class ModBlocks
 		MANGO_PLANT = new BlockMangoPlant("mango_plant");
 		
 		//Fluids
-		APPLE_JUICE_BLOCK = new BlockFluid("apple_juice_fluid", ModFluids.APPLE_JUICE_FLUID, Material.WATER);
-		GRAPE_JUICE_BLOCK = new BlockFluid("grape_juice_fluid", ModFluids.GRAPE_JUICE_FLUID, Material.WATER);
-		ORANGE_JUICE_BLOCK = new BlockFluid("orange_juice_fluid", ModFluids.ORANGE_JUICE_FLUID, Material.WATER);
-		FRUIT_PUNCH_BLOCK = new BlockFluid("fruit_juice_fluid", ModFluids.FRUIT_PUNCH_FLUID, Material.WATER);
-		LEMONADE_BLOCK = new BlockFluid("lemonade_fluid", ModFluids.LEMONADE_FLUID, Material.WATER);
-		PINK_LEMONADE_BLOCK = new BlockFluid("pink_lemonade_fluid", ModFluids.PINK_LEMONADE_FLUID, Material.WATER);
-		BEETROOT_JUICE_BLOCK = new BlockFluid("beetroot_juice_fluid", ModFluids.BEETROOT_JUICE_FLUID, Material.WATER);
-		GRAPEFRUIT_JUICE_BLOCK = new BlockFluid("grapefruit_juice_fluid", ModFluids.GRAPEFRUIT_JUICE_FLUID, Material.WATER);
-		PINEAPPLE_JUICE_BLOCK = new BlockFluid("pineapple_juice_fluid", ModFluids.PINEAPPLE_JUICE_FLUID, Material.WATER);
-		MILK_BLOCK = new BlockFluid("milk_fluid", ModFluids.MILK_FLUID, Material.WATER);
-		CHOCOLATE_MILK_BLOCK = new BlockFluid("chocolate_milk_fluid", ModFluids.CHOCOLATE_MILK_FLUID, Material.WATER);
-		STRAWBERRY_MILK_BLOCK = new BlockFluid("strawberry_milk_fluid", ModFluids.STRAWBERRY_MILK_FLUID, Material.WATER);
-		HOT_CHOCOLATE_BLOCK = new BlockFluid("hot_chocolate_fluid", ModFluids.HOT_CHOCOLATE_FLUID, Material.WATER);
-		CARROT_JUICE_BLOCK = new BlockFluid("carrot_milk_fluid", ModFluids.CARROT_JUICE_FLUID, Material.WATER);
-		STRAWBERRY_JUICE_BLOCK = new BlockFluid("strawberry_juice_fluid", ModFluids.STRAWBERRY_JUICE_FLUID, Material.WATER);
-		WATERMELON_JUICE_BLOCK = new BlockFluid("watermelon_juice_fluid", ModFluids.WATERMELON_JUICE_FLUID, Material.WATER);
-		COCONUT_WATER_BLOCK = new BlockFluid("coconut_water_fluid", ModFluids.COCONUT_WATER_FLUID, Material.WATER);
-		TEA_BLOCK = new BlockFluid("tea_fluid", ModFluids.TEA_FLUID, Material.WATER);
-		ICED_TEA_BLOCK = new BlockFluid("iced_tea_fluid", ModFluids.ICED_TEA_FLUID, Material.WATER);
-		GREEN_TEA_BLOCK = new BlockFluid("green_tea_fluid", ModFluids.GREEN_TEA_FLUID, Material.WATER);
-		BLACK_TEA_BLOCK = new BlockFluid("black_tea_fluid", ModFluids.BLACK_TEA_FLUID, Material.WATER);
-		WHITE_TEA_BLOCK = new BlockFluid("white_tea_fluid", ModFluids.WHITE_TEA_FLUID, Material.WATER);
-		YELLOW_TEA_BLOCK = new BlockFluid("yellow_tea_fluid", ModFluids.YELLOW_TEA_FLUID, Material.WATER);
-		LEMON_TEA_BLOCK = new BlockFluid("lemon_tea_fluid", ModFluids.LEMON_TEA_FLUID, Material.WATER);
-		WHITE_GRAPE_JUICE_BLOCK = new BlockFluid("white_grape_juice_fluid", ModFluids.WHITE_GRAPE_JUICE_FLUID, Material.WATER);
-		CRANBERRY_JUICE_BLOCK = new BlockFluid("cranberry_juice_fluid", ModFluids.CRANBERRY_JUICE_FLUID, Material.WATER);
-		TOMATO_JUICE_BLOCK = new BlockFluid("tomato_juice_fluid", ModFluids.TOMATO_JUICE_FLUID, Material.WATER);
-		POMEGRANATE_JUICE_BLOCK = new BlockFluid("pomegranate_juice_fluid", ModFluids.POMEGRANATE_JUICE_FLUID, Material.WATER);
-		PEACH_JUICE_BLOCK = new BlockFluid("peach_juice_fluid", ModFluids.PEACH_JUICE_FLUID, Material.WATER);
-		MANGO_JUICE_BLOCK = new BlockFluid("mango_juice_fluid", ModFluids.MANGO_JUICE_FLUID, Material.WATER);
-		COFFEE_BLOCK = new BlockFluid("coffee_fluid", ModFluids.COFFEE_FLUID, Material.WATER);
-		ICED_COFFEE_BLOCK = new BlockFluid("iced_coffee_fluid", ModFluids.ICED_COFFEE_FLUID, Material.WATER);
+		APPLE_JUICE_BLOCK = new BlockFluid("apple_juice_fluid", ModFluids.APPLE_JUICE_FLUID, ModMaterials.APPLE_JUICE);
+		GRAPE_JUICE_BLOCK = new BlockFluid("grape_juice_fluid", ModFluids.GRAPE_JUICE_FLUID, ModMaterials.GRAPE_JUICE);
+		ORANGE_JUICE_BLOCK = new BlockFluid("orange_juice_fluid", ModFluids.ORANGE_JUICE_FLUID, ModMaterials.ORANGE_JUICE);
+		FRUIT_PUNCH_BLOCK = new BlockFluid("fruit_juice_fluid", ModFluids.FRUIT_PUNCH_FLUID, ModMaterials.FRUIT_PUNCH);
+		LEMONADE_BLOCK = new BlockFluid("lemonade_fluid", ModFluids.LEMONADE_FLUID, ModMaterials.LEMONADE);
+		PINK_LEMONADE_BLOCK = new BlockFluid("pink_lemonade_fluid", ModFluids.PINK_LEMONADE_FLUID, ModMaterials.PINK_LEMONADE);
+		BEETROOT_JUICE_BLOCK = new BlockFluid("beetroot_juice_fluid", ModFluids.BEETROOT_JUICE_FLUID, ModMaterials.BEETROOT_JUICE);
+		GRAPEFRUIT_JUICE_BLOCK = new BlockFluid("grapefruit_juice_fluid", ModFluids.GRAPEFRUIT_JUICE_FLUID, ModMaterials.GRAPEFRUIT_JUICE);
+		PINEAPPLE_JUICE_BLOCK = new BlockFluid("pineapple_juice_fluid", ModFluids.PINEAPPLE_JUICE_FLUID, ModMaterials.PINEAPPLE_JUICE);
+		MILK_BLOCK = new BlockFluid("milk_fluid", ModFluids.MILK_FLUID, ModMaterials.MILK);
+		CHOCOLATE_MILK_BLOCK = new BlockFluid("chocolate_milk_fluid", ModFluids.CHOCOLATE_MILK_FLUID, ModMaterials.CHOCOLATE_MILK);
+		STRAWBERRY_MILK_BLOCK = new BlockFluid("strawberry_milk_fluid", ModFluids.STRAWBERRY_MILK_FLUID, ModMaterials.STRAWBERRY_MILK);
+		HOT_CHOCOLATE_BLOCK = new BlockFluid("hot_chocolate_fluid", ModFluids.HOT_CHOCOLATE_FLUID, ModMaterials.HOT_CHOCOLATE);
+		CARROT_JUICE_BLOCK = new BlockFluid("carrot_milk_fluid", ModFluids.CARROT_JUICE_FLUID, ModMaterials.CARROT_JUICE);
+		STRAWBERRY_JUICE_BLOCK = new BlockFluid("strawberry_juice_fluid", ModFluids.STRAWBERRY_JUICE_FLUID, ModMaterials.STRAWBERRY_JUICE);
+		WATERMELON_JUICE_BLOCK = new BlockFluid("watermelon_juice_fluid", ModFluids.WATERMELON_JUICE_FLUID, ModMaterials.WATERMELON_JUICE);
+		COCONUT_WATER_BLOCK = new BlockFluid("coconut_water_fluid", ModFluids.COCONUT_WATER_FLUID, ModMaterials.COCONUT_WATER);
+		TEA_BLOCK = new BlockFluid("tea_fluid", ModFluids.TEA_FLUID, ModMaterials.TEA);
+		ICED_TEA_BLOCK = new BlockFluid("iced_tea_fluid", ModFluids.ICED_TEA_FLUID, ModMaterials.ICED_TEA);
+		GREEN_TEA_BLOCK = new BlockFluid("green_tea_fluid", ModFluids.GREEN_TEA_FLUID, ModMaterials.GREEN_TEA);
+		BLACK_TEA_BLOCK = new BlockFluid("black_tea_fluid", ModFluids.BLACK_TEA_FLUID, ModMaterials.BLACK_TEA);
+		WHITE_TEA_BLOCK = new BlockFluid("white_tea_fluid", ModFluids.WHITE_TEA_FLUID, ModMaterials.WHITE_TEA);
+		YELLOW_TEA_BLOCK = new BlockFluid("yellow_tea_fluid", ModFluids.YELLOW_TEA_FLUID, ModMaterials.YELLOW_TEA);
+		LEMON_TEA_BLOCK = new BlockFluid("lemon_tea_fluid", ModFluids.LEMON_TEA_FLUID, ModMaterials.LEMON_TEA);
+		WHITE_GRAPE_JUICE_BLOCK = new BlockFluid("white_grape_juice_fluid", ModFluids.WHITE_GRAPE_JUICE_FLUID, ModMaterials.WHITE_GRAPE_JUICE);
+		CRANBERRY_JUICE_BLOCK = new BlockFluid("cranberry_juice_fluid", ModFluids.CRANBERRY_JUICE_FLUID, ModMaterials.CRANBERRY_JUICE);
+		TOMATO_JUICE_BLOCK = new BlockFluid("tomato_juice_fluid", ModFluids.TOMATO_JUICE_FLUID, ModMaterials.TOMATO_JUICE);
+		POMEGRANATE_JUICE_BLOCK = new BlockFluid("pomegranate_juice_fluid", ModFluids.POMEGRANATE_JUICE_FLUID, ModMaterials.POMEGRANATE_JUICE);
+		PEACH_JUICE_BLOCK = new BlockFluid("peach_juice_fluid", ModFluids.PEACH_JUICE_FLUID, ModMaterials.PEACH_JUICE);
+		MANGO_JUICE_BLOCK = new BlockFluid("mango_juice_fluid", ModFluids.MANGO_JUICE_FLUID, ModMaterials.MANGO_JUICE);
+		COFFEE_BLOCK = new BlockFluid("coffee_fluid", ModFluids.COFFEE_FLUID, ModMaterials.COFFEE);
+		ICED_COFFEE_BLOCK = new BlockFluid("iced_coffee_fluid", ModFluids.ICED_COFFEE_FLUID, ModMaterials.ICED_COFFEE);
 		
 		//Blenders
+		WHITE_BLENDER = new BlockBlender("white_blender", Material.GLASS);
 		BLUE_BLENDER = new BlockBlender("blue_blender", Material.GLASS);
 	}
 	
@@ -242,6 +244,7 @@ public class ModBlocks
 		registerBlock(ICED_COFFEE_BLOCK);
 		
 		//Blenders
+		registerBlock(WHITE_BLENDER);
 		registerBlock(BLUE_BLENDER);
 	}
 	

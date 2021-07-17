@@ -1,16 +1,10 @@
 package com.luisxcaliber.caliberdrinksmod.proxy;
 
+import net.minecraft.entity.player.EntityPlayer;
+
 public interface ProxyInterface 
-{
-	default void preInit()
-	{
-		
-	}
-	
-	default void init()
-	{
-		
-	}
+{	
+	EntityPlayer getClientPlayer();
 	
 	boolean isSinglePlayer();
 	

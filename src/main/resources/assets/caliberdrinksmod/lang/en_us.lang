@@ -53,37 +53,8 @@ item.peach.name=Peach
 item.mango.name=Mango
 
 //Bucket
-item.apple_juice_bucket.name=Apple Juice Bucket
-item.grape_juice_bucket.name=Grape Juice Bucket
-item.orange_juice_bucket.name=Orange Juice Bucket
-item.fruit_punch_bucket.name=Fruit Punch Bucket
-item.lemonade_bucket.name=Lemonade Bucket
-item.pink_lemonade_bucket.name=Pink Lemonade Bucket
-item.beetroot_juice_bucket.name=Beetroot Juice Bucket
-item.grapefruit_juice_bucket.name=Grapefruit Juice Bucket
-item.pineapple_juice_bucket.name=Pineapple Juice Bucket
-item.chocolate_milk_bucket.name=Chocolate Milk Bucket
-item.strawberry_milk_bucket.name=Strawberry Milk Bucket
-item.hot_chocolate_bucket.name=Hot Chocolate Bucket
-item.carrot_juice_bucket.name=Carrot Juice Bucket
-item.strawberry_juice_bucket.name=Strawberry Juice Bucket
-item.watermelon_juice_bucket.name=Watermelon Juice Bucket
-item.coconut_water_bucket.name=Coconut Water Bucket
-item.tea_bucket.name=Tea Bucket
-item.iced_tea_bucket.name=Iced Tea Bucket
-item.green_tea_bucket.name=Green Tea Bucket
-item.black_tea_bucket.name=Black Tea Bucket
-item.white_tea_bucket.name=White Tea Bucket
-item.yellow_tea_bucket.name=Yellow Tea Bucket
-item.lemon_tea_bucket.name=Lemon Tea Bucket
-item.white_grape_juice_bucket.name=White Grape Juice Bucket
-item.cranberry_juice_bucket.name=Cranberry Juice Bucket
-item.tomato_juice_bucket.name=Tomato Juice Bucket
-item.pomegranate_juice_bucket.name=Pomegranate Juice Bucket
-item.peach_juice_bucket.name=Peach Juice Bucket
-item.mango_juice_bucket.name=Mango Juice Bucket
-item.coffee_bucket.name=Coffee Bucket
-item.iced_coffee_bucket.name=Iced Coffee Bucket
+item.wood_bucket.name=Wood Bucket
+item.wood_bucket.filled.name=%s Wood Bucket
 
 //Plants
 tile.grape_plant.name=Grape Plant
@@ -187,4 +158,5 @@ fluid.coffee_fluid=Coffee
 fluid.iced_coffee_fluid=Iced Coffee
 
 //Blenders
+tile.white_blender.name=White Blender
 tile.blue_blender.name=Blue Blender

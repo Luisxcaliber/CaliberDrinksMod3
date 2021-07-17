@@ -1,7 +1,7 @@
 package com.luisxcaliber.caliberdrinksmod;
 
 import com.luisxcaliber.caliberdrinksmod.creativetabs.CaliberDrinksModTab;
-import com.luisxcaliber.caliberdrinksmod.proxy.CommonProxy;
+import com.luisxcaliber.caliberdrinksmod.proxy.ProxyInterface;
 import com.luisxcaliber.caliberdrinksmod.util.Reference;
 import com.luisxcaliber.caliberdrinksmod.util.handlers.RegistryHandler;
 
@@ -23,13 +23,13 @@ public class CaliberDrinksMod
 	@Instance
 	public static CaliberDrinksMod instance;
 	
-	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
-	public static CommonProxy proxy;
+	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
+	public static ProxyInterface proxy;
 	
 	@EventHandler
 	public static void preInit(FMLPreInitializationEvent event)
 	{
-		RegistryHandler.preInit();
+		RegistryHandler.preInit(event);
 	}
 	
 	@EventHandler

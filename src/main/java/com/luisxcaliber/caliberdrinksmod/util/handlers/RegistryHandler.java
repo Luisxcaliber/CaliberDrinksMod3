@@ -21,6 +21,9 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
@@ -94,11 +97,21 @@ public class RegistryHandler
 		}
 	}
 	
-	public static void preInit()
+	public static void preInit(FMLPreInitializationEvent event)
 	{
 		ModFluids.register();
 		GameRegistry.registerWorldGenerator(new WorldGenModStructures(), 3);
 		ModItems.register();
 		ModBlocks.register();
+	}
+	
+	public static void init(FMLInitializationEvent event)
+	{
+		
+	}
+	
+	public static void postInit(FMLPostInitializationEvent event)
+	{
+		
 	}
 }

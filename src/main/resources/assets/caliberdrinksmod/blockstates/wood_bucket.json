@@ -1,0 +1,17 @@
+{
+	"forge_marker": 1,
+	"variants": {
+		"inventory": {
+			"model": "forge:forgebucket",
+			"textures": {
+				"base": "caliberdrinksmod:items/wood_bucket_base",
+				"fluid": "forge:items/bucket_fluid",
+				"cover": "caliberdrinksmod:items/wood_bucket_cover"
+			},
+			"transform": "forge:default-item",
+			"custom": {
+				"flipGas": true
+			}
+		}
+	}
+}

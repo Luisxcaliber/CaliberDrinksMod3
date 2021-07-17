@@ -7,5 +7,5 @@ public class Reference
 	public static final String VERSION = "3.0";
 	public static final String ACCEPTED_MC_VERSIONS = "[1.12.2]";
 	public static final String CLIENT_PROXY_CLASS = "com.luisxcaliber.caliberdrinksmod.proxy.ClientProxy";
-	public static final String COMMON_PROXY_CLASS = "com.luisxcaliber.caliberdrinksmod.proxy.CommonProxy";
+	public static final String SERVER_PROXY_CLASS = "com.luisxcaliber.caliberdrinksmod.proxy.ServerProxy";
 }
