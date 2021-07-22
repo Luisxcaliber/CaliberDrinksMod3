@@ -190,7 +190,8 @@
             "from": [ 6, 6, 7 ], 
             "to": [ 7, 7, 9 ], 
             "faces": {
-                "west": { "texture": "#concrete_black", "uv": [ 0, 0, 2, 1 ] }
+                "west": { "texture": "#concrete_black", "uv": [ 0, 0, 2, 1 ] },
+                "up": { "texture": "#concrete_black", "uv": [ 0, 0, 1, 2 ] }
             }
         },
         {
@@ -198,7 +199,8 @@
             "from": [ 9, 6, 7 ], 
             "to": [ 10, 7, 9 ], 
             "faces": {
-                "east": { "texture": "#concrete_black", "uv": [ 0, 0, 2, 1 ] }
+                "east": { "texture": "#concrete_black", "uv": [ 0, 0, 2, 1 ] },
+                "up": { "texture": "#concrete_black", "uv": [ 0, 0, 1, 2 ] }
             }
         },
         {
@@ -211,52 +213,6 @@
         },
         {
             "name": "Jar Part 2",
-            "from": [ 9, 7, 6 ], 
-            "to": [ 10, 8, 10 ], 
-            "faces": {
-                "north": { "texture": "#glass", "uv": [ 0, 6, 1, 7 ] },
-                "east": { "texture": "#glass", "uv": [ 1, 1, 5, 2 ] },
-                "south": { "texture": "#glass", "uv": [ 0, 6, 1, 7 ] },
-                "west": { "texture": "#glass", "uv": [ 1, 1, 5, 2 ] },
-                "up": { "texture": "#glass", "uv": [ 2, 9, 3, 13 ] },
-                "down": { "texture": "#glass", "uv": [ 2, 9, 3, 13 ] }
-            }
-        },
-        {
-            "name": "Jar Part 3",
-            "from": [ 6, 7, 6 ], 
-            "to": [ 7, 8, 10 ], 
-            "faces": {
-                "north": { "texture": "#glass", "uv": [ 0, 6, 1, 7 ] },
-                "east": { "texture": "#glass", "uv": [ 1, 1, 5, 2 ] },
-                "south": { "texture": "#glass", "uv": [ 0, 6, 1, 7 ] },
-                "west": { "texture": "#glass", "uv": [ 1, 1, 5, 2 ] },
-                "up": { "texture": "#glass", "uv": [ 2, 9, 3, 13 ] },
-                "down": { "texture": "#glass", "uv": [ 2, 9, 3, 13 ] }
-            }
-        },
-        {
-            "name": "Jar Part 4",
-            "from": [ 7, 7, 6 ], 
-            "to": [ 9, 8, 7 ], 
-            "faces": {
-                "north": { "texture": "#glass", "uv": [ 0, 6, 2, 7 ] },
-                "south": { "texture": "#glass", "uv": [ 0, 6, 2, 7 ] },
-                "up": { "texture": "#glass", "uv": [ 2, 9, 4, 10 ] }
-            }
-        },
-        {
-            "name": "Jar Part 5",
-            "from": [ 7, 7, 9 ], 
-            "to": [ 9, 8, 10 ], 
-            "faces": {
-                "north": { "texture": "#glass", "uv": [ 0, 6, 2, 7 ] },
-                "south": { "texture": "#glass", "uv": [ 0, 6, 2, 7 ] },
-                "up": { "texture": "#glass", "uv": [ 2, 9, 4, 10 ] }
-            }
-        },
-        {
-            "name": "Jar Part 6",
             "from": [ 6, 8, 10 ], 
             "to": [ 10, 13, 11 ], 
             "faces": {
@@ -268,7 +224,7 @@
             }
         },
         {
-            "name": "Jar Part 7",
+            "name": "Jar Part 3",
             "from": [ 6, 8, 5 ], 
             "to": [ 10, 13, 6 ], 
             "faces": {
@@ -280,7 +236,7 @@
             }
         },
         {
-            "name": "Jar Part 8",
+            "name": "Jar Part 4",
             "from": [ 5, 8, 6 ], 
             "to": [ 6, 13, 10 ], 
             "faces": {
@@ -292,7 +248,7 @@
             }
         },
         {
-            "name": "Jar Part 9",
+            "name": "Jar Part 5",
             "from": [ 10, 8, 6 ], 
             "to": [ 11, 13, 10 ], 
             "faces": {

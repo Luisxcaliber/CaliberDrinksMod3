@@ -6,7 +6,7 @@ import com.luisxcaliber.caliberdrinksmod.util.Reference;
 import com.luisxcaliber.caliberdrinksmod.util.handlers.RegistryHandler;
 
 import net.minecraft.creativetab.CreativeTabs;
-
+import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -26,6 +26,10 @@ public class CaliberDrinksMod
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
 	public static ProxyInterface proxy;
 	
+	static {
+		FluidRegistry.enableUniversalBucket();
+	}
+	
 	@EventHandler
 	public static void preInit(FMLPreInitializationEvent event)
 	{
@@ -35,7 +39,7 @@ public class CaliberDrinksMod
 	@EventHandler
 	public static void init(FMLInitializationEvent event)
 	{
-		
+		RegistryHandler.init(event);
 	}
 	
 	@EventHandler

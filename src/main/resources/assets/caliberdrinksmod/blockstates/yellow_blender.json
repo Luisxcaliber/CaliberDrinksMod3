@@ -1,0 +1,9 @@
+{
+    "variants": 
+    {
+        "facing=south": { "model": "caliberdrinksmod:yellow_blender"},
+        "facing=west": { "model": "caliberdrinksmod:yellow_blender", "y": 90},
+        "facing=north": { "model": "caliberdrinksmod:yellow_blender", "y": 180},
+        "facing=east": { "model": "caliberdrinksmod:yellow_blender", "y": 270}
+    }
+}

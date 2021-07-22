@@ -1,5 +1,6 @@
 package com.luisxcaliber.caliberdrinksmod.init;
 
+import com.luisxcaliber.caliberdrinksmod.items.ItemBase;
 import com.luisxcaliber.caliberdrinksmod.items.ItemDrinkSeed;
 import com.luisxcaliber.caliberdrinksmod.items.food.DrinkBase;
 import com.luisxcaliber.caliberdrinksmod.items.food.DrinkCoffee;
@@ -82,6 +83,13 @@ public class ModItems
 	//Bucket
 	public static final Item WOOD_BUCKET;
 	
+	//Blender Parts
+	public static final Item BLENDER_JAR;
+	
+	public static final Item BLUE_BLENDER_LID;
+	
+	public static final Item BLUE_BLENDER_BASE;
+	
 	static
 	{
 		//Drinks
@@ -153,6 +161,13 @@ public class ModItems
 		
 		//Bucket
 		WOOD_BUCKET = new ItemModBucket("wood_bucket");
+		
+		//Blender Parts
+		BLENDER_JAR = new ItemBase("blender_jar");
+		
+		BLUE_BLENDER_LID = new ItemBase("blue_blender_lid");
+		
+		BLUE_BLENDER_BASE = new ItemBase("blue_blender_base");
 	}
 	
 	public static void register()
@@ -226,6 +241,13 @@ public class ModItems
 		
 		//Bucket
 		registerItem(WOOD_BUCKET);
+		
+		//Blender Parts
+		registerItem(BLENDER_JAR);
+		
+		registerItem(BLUE_BLENDER_LID);
+		
+		registerItem(BLUE_BLENDER_BASE);
 	}
 	
 	private static void registerItem(Item item)

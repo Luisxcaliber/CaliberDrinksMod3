@@ -56,6 +56,13 @@ item.mango.name=Mango
 item.wood_bucket.name=Wood Bucket
 item.wood_bucket.filled.name=%s Wood Bucket
 
+//Blender Parts
+item.blender_jar.name=Blender Jar
+
+item.blue_blender_lid.name=Blue Blender Lid
+
+item.blue_blender_base.name=Blue Blender Base
+
 //Plants
 tile.grape_plant.name=Grape Plant
 tile.orange_plant.name=Orange Plant
@@ -158,5 +165,19 @@ fluid.coffee_fluid=Coffee
 fluid.iced_coffee_fluid=Iced Coffee
 
 //Blenders
-tile.white_blender.name=White Blender
+tile.black_blender.name=Black Blender
+tile.red_blender.name=Red Blender
+tile.green_blender.name=Green Blender
+tile.brown_blender.name=Brown Blender
 tile.blue_blender.name=Blue Blender
+tile.purple_blender.name=Purple Blender
+tile.cyan_blender.name=Cyan Blender
+tile.light_grey_blender.name=Light Grey Blender
+tile.grey_blender.name=Grey Blender
+tile.pink_blender.name=Pink Blender
+tile.lime_blender.name=Lime Blender
+tile.yellow_blender.name=Yellow Blender
+tile.light_blue_blender.name=Light Blue Blender
+tile.magenta_blender.name=Magenta Blender
+tile.orange_blender.name=Orange Blender
+tile.white_blender.name=White Blender

@@ -3,10 +3,12 @@ package com.luisxcaliber.caliberdrinksmod.util.handlers;
 import java.util.LinkedList;
 import java.util.List;
 
+import com.luisxcaliber.caliberdrinksmod.CaliberDrinksMod;
 import com.luisxcaliber.caliberdrinksmod.init.ModBlocks;
 import com.luisxcaliber.caliberdrinksmod.init.ModFluids;
 import com.luisxcaliber.caliberdrinksmod.init.ModItems;
 import com.luisxcaliber.caliberdrinksmod.items.SubItems;
+import com.luisxcaliber.caliberdrinksmod.recipes.SmeltingRecipes;
 import com.luisxcaliber.caliberdrinksmod.util.Reference;
 import com.luisxcaliber.caliberdrinksmod.world.gen.WorldGenModStructures;
 
@@ -25,6 +27,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 
@@ -107,7 +110,8 @@ public class RegistryHandler
 	
 	public static void init(FMLInitializationEvent event)
 	{
-		
+		NetworkRegistry.INSTANCE.registerGuiHandler(CaliberDrinksMod.instance, new GuiHandler());
+		SmeltingRecipes.init();
 	}
 	
 	public static void postInit(FMLPostInitializationEvent event)

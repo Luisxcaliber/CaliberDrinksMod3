@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "# G",
+        "BBB"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:glass"
+        },
+        "G": {
+            "item": "minecraft:concrete",
+            "data": 7
+        },
+        "B": {
+            "item": "minecraft:concrete",
+            "data": 15
+        }
+    },
+    
+    "result":
+    {
+        "item": "caliberdrinksmod:blender_jar",
+        "count": 1
+    }
+}

@@ -95,8 +95,22 @@ public class ModBlocks
 	public static final Block ICED_COFFEE_BLOCK;
 	
 	//Blenders
-	public static final Block WHITE_BLENDER;
+	public static final Block BLACK_BLENDER;
+	public static final Block RED_BLENDER;
+	public static final Block GREEN_BLENDER;
+	public static final Block BROWN_BLENDER;
 	public static final Block BLUE_BLENDER;
+	public static final Block PURPLE_BLENDER;
+	public static final Block CYAN_BLENDER;
+	public static final Block LIGHT_GREY_BLENDER;
+	public static final Block GREY_BLENDER;
+	public static final Block PINK_BLENDER;
+	public static final Block LIME_BLENDER;
+	public static final Block YELLOW_BLENDER;
+	public static final Block LIGHT_BLUE_BLENDER;
+	public static final Block MAGENTA_BLENDER;
+	public static final Block ORANGE_BLENDER;
+	public static final Block WHITE_BLENDER;
 	
 	static
 	{
@@ -169,8 +183,22 @@ public class ModBlocks
 		ICED_COFFEE_BLOCK = new BlockFluid("iced_coffee_fluid", ModFluids.ICED_COFFEE_FLUID, ModMaterials.ICED_COFFEE);
 		
 		//Blenders
-		WHITE_BLENDER = new BlockBlender("white_blender", Material.GLASS);
+		BLACK_BLENDER = new BlockBlender("black_blender", Material.GLASS);
+		RED_BLENDER = new BlockBlender("red_blender", Material.GLASS);
+		GREEN_BLENDER = new BlockBlender("green_blender", Material.GLASS);
+		BROWN_BLENDER = new BlockBlender("brown_blender", Material.GLASS);
 		BLUE_BLENDER = new BlockBlender("blue_blender", Material.GLASS);
+		PURPLE_BLENDER = new BlockBlender("purple_blender", Material.GLASS);
+		CYAN_BLENDER = new BlockBlender("cyan_blender", Material.GLASS);
+		LIGHT_GREY_BLENDER = new BlockBlender("light_grey_blender", Material.GLASS);
+		GREY_BLENDER = new BlockBlender("grey_blender", Material.GLASS);
+		PINK_BLENDER = new BlockBlender("pink_blender", Material.GLASS);
+		LIME_BLENDER = new BlockBlender("lime_blender", Material.GLASS);
+		YELLOW_BLENDER = new BlockBlender("yellow_blender", Material.GLASS);
+		LIGHT_BLUE_BLENDER = new BlockBlender("light_blue_blender", Material.GLASS);
+		MAGENTA_BLENDER = new BlockBlender("magenta_blender", Material.GLASS);
+		ORANGE_BLENDER = new BlockBlender("orange_blender", Material.GLASS);
+		WHITE_BLENDER = new BlockBlender("white_blender", Material.GLASS);
 	}
 	
 	public static void register()
@@ -244,8 +272,22 @@ public class ModBlocks
 		registerBlock(ICED_COFFEE_BLOCK);
 		
 		//Blenders
-		registerBlock(WHITE_BLENDER);
+		registerBlock(BLACK_BLENDER);
+		registerBlock(RED_BLENDER);
+		registerBlock(GREEN_BLENDER);
+		registerBlock(BROWN_BLENDER);
 		registerBlock(BLUE_BLENDER);
+		registerBlock(PURPLE_BLENDER);
+		registerBlock(CYAN_BLENDER);
+		registerBlock(LIGHT_GREY_BLENDER);
+		registerBlock(GREY_BLENDER);
+		registerBlock(PINK_BLENDER);
+		registerBlock(LIME_BLENDER);
+		registerBlock(YELLOW_BLENDER);
+		registerBlock(LIGHT_BLUE_BLENDER);
+		registerBlock(MAGENTA_BLENDER);
+		registerBlock(ORANGE_BLENDER);
+		registerBlock(WHITE_BLENDER);
 	}
 	
 	private static void registerBlock(Block block)

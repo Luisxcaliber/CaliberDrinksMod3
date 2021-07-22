@@ -72,12 +72,14 @@ public class ItemModBucket extends UniversalBucket
 		FluidStack fluidStack = getFluid(stack);
 		String unlocalisedName = this.getUnlocalizedNameInefficiently(stack);
 
-		if (fluidStack == null) {
+		if (fluidStack == null) 
+		{
 			return I18n.translateToLocal(unlocalisedName + ".name").trim();
 		}
 
 		String fluidUnlocalisedName = unlocalisedName + ".filled." + fluidStack.getFluid().getName() + ".name";
-		if (I18n.canTranslate(fluidUnlocalisedName)) {
+		if (I18n.canTranslate(fluidUnlocalisedName)) 
+		{
 			return I18n.translateToLocal(fluidUnlocalisedName);
 		}
 
