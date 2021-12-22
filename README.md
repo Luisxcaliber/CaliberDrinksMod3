@@ -1,6 +1,6 @@
 CaliberDrinksMod By Luisxcaliber
 
-Download:https://www.curseforge.com/minecraft/mc-mods/caliber-drinks-mod
+Download: https://www.curseforge.com/minecraft/mc-mods/caliber-drinks-mod
 
 What Needs To Be Added For Update 3.0
 
