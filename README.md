@@ -11,3 +11,4 @@ What Needs To Be Added For Update 3.0
 - More drinks
 - Different types of bottles
 - Improved Textures "maybe"
+- New Logo
