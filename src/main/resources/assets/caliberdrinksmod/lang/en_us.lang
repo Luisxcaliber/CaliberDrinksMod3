@@ -181,3 +181,6 @@ tile.light_blue_blender.name=Light Blue Blender
 tile.magenta_blender.name=Magenta Blender
 tile.orange_blender.name=Orange Blender
 tile.white_blender.name=White Blender
+
+//Containers
+container.blender=Blender

@@ -3,6 +3,7 @@ package com.luisxcaliber.caliberdrinksmod.gui;
 import com.luisxcaliber.caliberdrinksmod.blocks.BlockBlender;
 import com.luisxcaliber.caliberdrinksmod.gui.containers.ContainerBlender;
 import com.luisxcaliber.caliberdrinksmod.init.ModBlocks;
+import com.luisxcaliber.caliberdrinksmod.tileentity.TileEntityBlender;
 
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
@@ -28,18 +29,34 @@ public class GuiBlender extends GuiContainer
 	private static final ResourceLocation GUI_ORANGE_BLENDER = new ResourceLocation("caliberdrinksmod:textures/gui/orange_blender.png");
 	private static final ResourceLocation GUI_WHITE_BLENDER = new ResourceLocation("caliberdrinksmod:textures/gui/white_blender.png");
 	
+	private final InventoryPlayer playerInv;
+	private final TileEntityBlender tileentity;
+	
 	private final int type;
 	
-	public GuiBlender(InventoryPlayer playerInventory, BlockBlender block) 
+	public GuiBlender(InventoryPlayer playerInventory, TileEntityBlender tileentityblender, BlockBlender block) 
 	{
-		super(new ContainerBlender(playerInventory));
+		super(new ContainerBlender(playerInventory, tileentityblender));
+		playerInv = playerInventory;
+		tileentity = tileentityblender;
 		type = getType(block);
+		
+		xSize = 176;
+		ySize = 230;
 	}
+	
+	@Override
+    public void drawScreen(int mouseX, int mouseY, float partialTicks)
+    {
+        super.drawScreen(mouseX, mouseY, partialTicks);
+        renderHoveredToolTip(mouseX, mouseY);
+    }
 	
 	@Override
 	protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) 
 	{
-		
+		fontRenderer.drawString(tileentity.getDisplayName().getUnformattedText(), 8, 6, 4210752);
+		fontRenderer.drawString(playerInv.getDisplayName().getUnformattedText(), 8, ySize - 117, 4210752);
 	}
 	
 	@Override
@@ -56,9 +73,6 @@ public class GuiBlender extends GuiContainer
 		
 		switch(type)
 		{
-            default:
-                resource = GUI_BLACK_BLENDER;
-                break;
             case 1:
             	resource = GUI_RED_BLENDER;
             	break;
@@ -104,7 +118,9 @@ public class GuiBlender extends GuiContainer
             case 15:
             	resource = GUI_WHITE_BLENDER;
             	break;
-			
+            default:
+                resource = GUI_BLACK_BLENDER;
+                break;
 		}
 		mc.getTextureManager().bindTexture(resource);
 	}

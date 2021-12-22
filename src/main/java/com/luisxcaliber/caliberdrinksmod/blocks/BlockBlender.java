@@ -6,6 +6,7 @@ import javax.annotation.Nullable;
 
 import com.google.common.collect.Lists;
 import com.luisxcaliber.caliberdrinksmod.CaliberDrinksMod;
+import com.luisxcaliber.caliberdrinksmod.tileentity.TileEntityBlender;
 import com.luisxcaliber.caliberdrinksmod.util.Reference;
 
 import net.minecraft.block.BlockHorizontal;
@@ -18,6 +19,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
@@ -38,6 +40,39 @@ public class BlockBlender extends BlockBase
 	{
 		super(name, material);
 		setDefaultState(blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+	}
+	
+	@Override
+	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) 
+	{
+		if(!worldIn.isRemote)
+		{
+			playerIn.openGui(CaliberDrinksMod.instance, Reference.GUI_BLENDER, worldIn, pos.getX(), pos.getY(), pos.getZ());
+		}
+		
+		return true;
+	}
+	
+	public static void setState(boolean active, World worldIn, BlockPos pos)
+	{
+		TileEntity tileentity = worldIn.getTileEntity(pos);
+		
+		if(tileentity != null)
+		{
+			tileentity.validate();
+			worldIn.setTileEntity(pos, tileentity);
+		}
+	}
+	
+	@Override
+	public boolean hasTileEntity(IBlockState state)
+	{
+		return true;
+	}
+	
+	public TileEntity createTileEntity(World world, IBlockState state)
+	{
+		return new TileEntityBlender();
 	}
 	
 	public BlockRenderLayer getBlockLayer()
@@ -116,17 +151,6 @@ public class BlockBlender extends BlockBase
 	public int getMetaFromState(IBlockState state) 
 	{
 		return ((EnumFacing)state.getValue(FACING)).getIndex();
-	}
-	
-	@Override
-	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) 
-	{
-		if(!worldIn.isRemote)
-		{
-			playerIn.openGui(CaliberDrinksMod.instance, Reference.GUI_BLENDER, worldIn, pos.getX(), pos.getY(), pos.getZ());
-		}
-		
-		return true;
 	}
 	
 	private static final AxisAlignedBB LEG_1 = new AxisAlignedBB(0.625, 0, 0.25, 0.75, 0.125, 0.375);

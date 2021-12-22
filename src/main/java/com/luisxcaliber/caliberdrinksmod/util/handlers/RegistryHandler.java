@@ -71,6 +71,7 @@ public class RegistryHandler
 		{
 			BLOCKS.forEach(block -> event.getRegistry().register(block));
 			RenderHandler.registerCustomStates();
+			TileEntityHandler.registerTileEntity();
 		}
 	}
 	
