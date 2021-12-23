@@ -73,6 +73,9 @@ public class GuiBlender extends GuiContainer
 		
 		switch(type)
 		{
+		default:
+            resource = GUI_BLACK_BLENDER;
+                break;
             case 1:
             	resource = GUI_RED_BLENDER;
             	break;
@@ -118,9 +121,6 @@ public class GuiBlender extends GuiContainer
             case 15:
             	resource = GUI_WHITE_BLENDER;
             	break;
-            default:
-                resource = GUI_BLACK_BLENDER;
-                break;
 		}
 		mc.getTextureManager().bindTexture(resource);
 	}
