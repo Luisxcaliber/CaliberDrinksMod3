@@ -1,19 +1,21 @@
 package com.luisxcaliber.caliberdrinksmod.gui.slots;
 
-import net.minecraft.inventory.IInventory;
-import net.minecraft.inventory.Slot;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.items.SlotItemHandler;
 
-public class SlotBlenderOutput extends Slot 
+public class SlotBlenderOutput extends SlotItemHandler 
 {
-	public SlotBlenderOutput(IInventory inventoryIn, int index, int x, int y) 
+	public SlotBlenderOutput(IItemHandler itemHandler, int index, int xPosition, int yPosition)
 	{
-		super(inventoryIn, index, x, y);
+		super(itemHandler, index, xPosition, yPosition);
 	}
 	
 	@Override
-	public boolean isItemValid(ItemStack stack)
+	public boolean isItemValid(ItemStack stack) 
 	{
+		if(stack.getItem() == Items.GLASS_BOTTLE) return true;
 		return false;
 	}
 }

@@ -7,6 +7,9 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
+import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.items.SlotItemHandler;
 
 public class ContainerBlender extends Container 
 {
@@ -15,14 +18,15 @@ public class ContainerBlender extends Container
 	public ContainerBlender(InventoryPlayer playerInventory, TileEntityBlender tileentityblender)
 	{
 		tileentity = tileentityblender;
+		IItemHandler handler = tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
 		
-		addSlotToContainer(new Slot(playerInventory, 0, 71, 14));
-		addSlotToContainer(new Slot(playerInventory, 1, 89, 14));
-		addSlotToContainer(new Slot(playerInventory, 2, 71, 32));
-		addSlotToContainer(new Slot(playerInventory, 3, 89, 32));
-		addSlotToContainer(new Slot(playerInventory, 4, 71, 50));
-		addSlotToContainer(new Slot(playerInventory, 5, 89, 50));
-		addSlotToContainer(new SlotBlenderOutput(playerInventory, 6, 79, 73));
+		addSlotToContainer(new SlotItemHandler(handler, 0, 71, 14));
+		addSlotToContainer(new SlotItemHandler(handler, 1, 89, 14));
+		addSlotToContainer(new SlotItemHandler(handler, 2, 71, 32));
+		addSlotToContainer(new SlotItemHandler(handler, 3, 89, 32));
+		addSlotToContainer(new SlotItemHandler(handler, 4, 71, 50));
+		addSlotToContainer(new SlotItemHandler(handler, 5, 89, 50));
+		addSlotToContainer(new SlotBlenderOutput(handler, 6, 79, 73));
 		
 		for(int y = 0; y < 3; y++)
 		{
@@ -43,5 +47,4 @@ public class ContainerBlender extends Container
 	{
 		return tileentity.isUsableByPlayer(playerIn);
 	}
-	
 }

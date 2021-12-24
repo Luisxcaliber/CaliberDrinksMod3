@@ -11,13 +11,13 @@ import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 
-public class TileEntityBlender extends TileEntity 
+public class TileEntityBlender extends TileEntity
 {
-	private ItemStackHandler handler = new ItemStackHandler(4);
+	private ItemStackHandler handler = new ItemStackHandler(6);
 	private String customName;
 	
 	@Override
-	public boolean hasCapability(Capability<?> capability, EnumFacing facing)
+	public boolean hasCapability(Capability<?> capability, EnumFacing facing) 
 	{
 		if(capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) return true;
 		else return false;
@@ -25,7 +25,7 @@ public class TileEntityBlender extends TileEntity
 	
 	@SuppressWarnings("unchecked")
 	@Override
-	public <T> T getCapability(Capability<T> capability, EnumFacing facing)
+	public <T> T getCapability(Capability<T> capability, EnumFacing facing) 
 	{
 		if(capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) return (T) handler;
 		return super.getCapability(capability, facing);
