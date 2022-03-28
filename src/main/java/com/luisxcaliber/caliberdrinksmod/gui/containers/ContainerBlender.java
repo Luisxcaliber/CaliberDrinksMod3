@@ -7,6 +7,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
@@ -47,4 +48,47 @@ public class ContainerBlender extends Container
 	{
 		return tileentity.isUsableByPlayer(playerIn);
 	}
+	
+	@Override
+	public ItemStack transferStackInSlot(EntityPlayer playerIn, int index)
+    {
+		ItemStack stack = ItemStack.EMPTY;
+        Slot slot = inventorySlots.get(index);
+
+        if (slot != null && slot.getHasStack()) 
+        {
+            ItemStack stackInSlot = slot.getStack();
+            stack = stackInSlot.copy();
+
+            int containerSlots = inventorySlots.size() - playerIn.inventory.mainInventory.size();
+
+            if (index < containerSlots) 
+            {
+                if (!this.mergeItemStack(stackInSlot, containerSlots, inventorySlots.size(), true)) 
+                {
+                    return ItemStack.EMPTY;
+                }
+                
+            }
+            
+            else if (!this.mergeItemStack(stackInSlot, 0, containerSlots, false)) 
+            {
+                return ItemStack.EMPTY;
+            }
+
+            if (stackInSlot.getCount() == 0) 
+            {
+                slot.putStack(ItemStack.EMPTY);
+            }
+            
+            else 
+            {
+                slot.onSlotChanged();
+            }
+
+            slot.onTake(playerIn, stackInSlot);
+            
+        }
+        return stack;
+    }
 }
