@@ -13,7 +13,7 @@ import net.minecraftforge.items.ItemStackHandler;
 
 public class TileEntityBlender extends TileEntity
 {
-	private ItemStackHandler handler = new ItemStackHandler(7);
+	private ItemStackHandler handler = new ItemStackHandler(8);
 	private String customName;
 	
 	@Override

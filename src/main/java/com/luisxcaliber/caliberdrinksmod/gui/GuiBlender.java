@@ -9,6 +9,7 @@ import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.World;
 
 public class GuiBlender extends GuiContainer 
 {
@@ -34,9 +35,9 @@ public class GuiBlender extends GuiContainer
 	
 	private final int type;
 	
-	public GuiBlender(InventoryPlayer playerInventory, TileEntityBlender tileentityblender, BlockBlender block) 
+	public GuiBlender(InventoryPlayer playerInventory, TileEntityBlender tileentityblender, World world, BlockBlender block) 
 	{
-		super(new ContainerBlender(playerInventory, tileentityblender));
+		super(new ContainerBlender(playerInventory, tileentityblender, world));
 		playerInv = playerInventory;
 		tileentity = tileentityblender;
 		type = getType(block);

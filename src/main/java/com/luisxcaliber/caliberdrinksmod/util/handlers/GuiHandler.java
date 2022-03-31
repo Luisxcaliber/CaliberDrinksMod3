@@ -18,7 +18,7 @@ public class GuiHandler implements IGuiHandler
 	@Override
 	public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) 
 	{
-		if(ID == Reference.GUI_BLENDER) return new ContainerBlender(player.inventory, (TileEntityBlender)world.getTileEntity(new BlockPos(x,y,z)));
+		if(ID == Reference.GUI_BLENDER) return new ContainerBlender(player.inventory, (TileEntityBlender)world.getTileEntity(new BlockPos(x,y,z)), world);
 		return null;
 	}
 
@@ -28,7 +28,7 @@ public class GuiHandler implements IGuiHandler
 		TileEntity tileEntity = world.getTileEntity(new BlockPos(x, y, z));
 		if(tileEntity instanceof TileEntityBlender)
 		{
-			return new GuiBlender(player.inventory, (TileEntityBlender) tileEntity, (BlockBlender) tileEntity.getBlockType());
+			return new GuiBlender(player.inventory, (TileEntityBlender) tileEntity, world, (BlockBlender) tileEntity.getBlockType());
 		}
 		return null;
 	}
