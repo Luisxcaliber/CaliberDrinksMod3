@@ -1,0 +1,6 @@
+{
+   "parent": "item/generated",
+   "textures": {
+       "layer0": "caliberdrinksmod:items/pomegranate_juice_bucket"
+   }
+}

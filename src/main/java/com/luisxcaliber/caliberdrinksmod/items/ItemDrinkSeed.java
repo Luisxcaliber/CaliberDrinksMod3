@@ -1,11 +1,8 @@
 package com.luisxcaliber.caliberdrinksmod.items;
 
-import com.luisxcaliber.caliberdrinksmod.CaliberDrinksMod;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumFacing;
@@ -16,15 +13,13 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.IPlantable;
 
-public class ItemDrinkSeed extends Item implements IPlantable 
+public class ItemDrinkSeed extends ItemBase implements IPlantable 
 {
 	private final Block plantBlock;
 	
 	public ItemDrinkSeed(String name, Block plantInBlock) 
 	{
-		setUnlocalizedName(name);
-		setRegistryName(name);
-		setCreativeTab(CaliberDrinksMod.tabCaliberDrinksMod);
+		super(name);
 		plantBlock = plantInBlock;
 	}
 	
@@ -38,8 +33,8 @@ public class ItemDrinkSeed extends Item implements IPlantable
             stack.shrink(1);
             return EnumActionResult.SUCCESS;
         }
+        
         else return EnumActionResult.FAIL;
-
     }
     
 	@Override

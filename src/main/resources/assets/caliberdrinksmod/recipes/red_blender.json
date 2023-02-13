@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " L ",
+        " J ",
+        " B "
+    ],
+    "key": {
+        "L": {
+            "item": "caliberdrinksmod:red_blender_lid"
+        },
+        "J": {
+            "item": "caliberdrinksmod:blender_jar"
+        },
+        "B": {
+            "item": "caliberdrinksmod:red_blender_base"
+        }
+    },
+    
+    "result":
+    {
+        "item": "caliberdrinksmod:red_blender",
+        "count": 1
+    }
+}

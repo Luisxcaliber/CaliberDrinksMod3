@@ -18,6 +18,7 @@ public class DrinkBase extends ItemFood
 		setRegistryName(name);
 		setCreativeTab(CaliberDrinksMod.tabCaliberDrinksMod);
 		setAlwaysEdible();
+		setMaxStackSize(1);
 	}
 	
     @Override

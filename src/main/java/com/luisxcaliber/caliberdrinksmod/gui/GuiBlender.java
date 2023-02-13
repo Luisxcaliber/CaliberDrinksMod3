@@ -20,8 +20,8 @@ public class GuiBlender extends GuiContainer
 	private static final ResourceLocation GUI_BLUE_BLENDER = new ResourceLocation("caliberdrinksmod:textures/gui/blue_blender.png");
 	private static final ResourceLocation GUI_PURPLE_BLENDER = new ResourceLocation("caliberdrinksmod:textures/gui/purple_blender.png");
 	private static final ResourceLocation GUI_CYAN_BLENDER = new ResourceLocation("caliberdrinksmod:textures/gui/cyan_blender.png");
-	private static final ResourceLocation GUI_LIGHT_GREY_BLENDER = new ResourceLocation("caliberdrinksmod:textures/gui/light_grey_blender.png");
-	private static final ResourceLocation GUI_GREY_BLENDER = new ResourceLocation("caliberdrinksmod:textures/gui/grey_blender.png");
+	private static final ResourceLocation GUI_LIGHT_GRAY_BLENDER = new ResourceLocation("caliberdrinksmod:textures/gui/light_gray_blender.png");
+	private static final ResourceLocation GUI_GRAY_BLENDER = new ResourceLocation("caliberdrinksmod:textures/gui/gray_blender.png");
 	private static final ResourceLocation GUI_PINK_BLENDER = new ResourceLocation("caliberdrinksmod:textures/gui/pink_blender.png");
 	private static final ResourceLocation GUI_LIME_BLENDER = new ResourceLocation("caliberdrinksmod:textures/gui/lime_blender.png");
 	private static final ResourceLocation GUI_YELLOW_BLENDER = new ResourceLocation("caliberdrinksmod:textures/gui/yellow_blender.png");
@@ -96,10 +96,10 @@ public class GuiBlender extends GuiContainer
             	resource = GUI_CYAN_BLENDER;
             	break;
             case 7:
-            	resource = GUI_LIGHT_GREY_BLENDER;
+            	resource = GUI_LIGHT_GRAY_BLENDER;
             	break;
             case 8:
-            	resource = GUI_GREY_BLENDER;
+            	resource = GUI_GRAY_BLENDER;
             	break;
             case 9:
             	resource = GUI_PINK_BLENDER;
@@ -134,8 +134,8 @@ public class GuiBlender extends GuiContainer
 		if(block == ModBlocks.BLUE_BLENDER) return 4;
 		if(block == ModBlocks.PURPLE_BLENDER) return 5;
 		if(block == ModBlocks.CYAN_BLENDER) return 6;
-		if(block == ModBlocks.LIGHT_GREY_BLENDER) return 7;
-		if(block == ModBlocks.GREY_BLENDER) return 8;
+		if(block == ModBlocks.LIGHT_GRAY_BLENDER) return 7;
+		if(block == ModBlocks.GRAY_BLENDER) return 8;
 		if(block == ModBlocks.PINK_BLENDER) return 9;
 		if(block == ModBlocks.LIME_BLENDER) return 10;
 		if(block == ModBlocks.YELLOW_BLENDER) return 11;

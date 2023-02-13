@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
+import com.luisxcaliber.caliberdrinksmod.util.handlers.ConfigHandler;
 import com.luisxcaliber.caliberdrinksmod.world.gen.feature.WorldGenStructure;
 
 import net.minecraft.block.Block;
@@ -94,65 +95,110 @@ public class WorldGenModStructures implements IWorldGenerator
 			
 		case 0:
 			
-			generateStructure(GRAPEBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class, BiomePlains.class);
-			generateStructure(GRAPEBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
-			generateStructure(GRAPEBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			if(ConfigHandler.enableGrapeBushGen)
+			{
+				generateStructure(GRAPEBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class, BiomePlains.class);
+				generateStructure(GRAPEBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+				generateStructure(GRAPEBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			}
 			
-			generateStructure(ORANGEBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class, BiomePlains.class);
-			generateStructure(ORANGEBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
-			generateStructure(ORANGEBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			if(ConfigHandler.enableOrangeBushGen)
+			{
+				generateStructure(ORANGEBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class, BiomePlains.class);
+				generateStructure(ORANGEBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+				generateStructure(ORANGEBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			}
 			
-			generateStructure(LEMONBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class, BiomePlains.class);
-			generateStructure(LEMONBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
-			generateStructure(LEMONBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			if(ConfigHandler.enableLemonBushGen)
+			{
+				generateStructure(LEMONBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class, BiomePlains.class);
+				generateStructure(LEMONBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+				generateStructure(LEMONBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			}
 			
-			generateStructure(GRAPEFRUITBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeSavanna.class);
-			generateStructure(GRAPEFRUITBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeSavanna.class);
-			generateStructure(GRAPEFRUITBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeSavanna.class);
+			if(ConfigHandler.enableGrapefruitBushGen)
+			{
+				generateStructure(GRAPEFRUITBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeSavanna.class);
+				generateStructure(GRAPEFRUITBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeSavanna.class);
+				generateStructure(GRAPEFRUITBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeSavanna.class);
+			}
 			
-			generateStructure(PINEAPPLEBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
-			generateStructure(PINEAPPLEBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
-			generateStructure(PINEAPPLEBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			if(ConfigHandler.enablePineappleBushGen)
+			{
+				generateStructure(PINEAPPLEBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+				generateStructure(PINEAPPLEBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+				generateStructure(PINEAPPLEBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			}
 			
-			generateStructure(STRAWBERRYBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class, BiomePlains.class);
-			generateStructure(STRAWBERRYBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
-			generateStructure(STRAWBERRYBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			if(ConfigHandler.enableStrawberryBushGen)
+			{
+				generateStructure(STRAWBERRYBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class, BiomePlains.class);
+				generateStructure(STRAWBERRYBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+				generateStructure(STRAWBERRYBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			}
 			
-			generateStructure(COFFEEBEANBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
-			generateStructure(COFFEEBEANBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
-			generateStructure(COFFEEBEANBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
+			if(ConfigHandler.enableCoffeeBeanBushGen)
+			{
+				generateStructure(COFFEEBEANBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
+				generateStructure(COFFEEBEANBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
+				generateStructure(COFFEEBEANBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
+			}
 			
-			generateStructure(COCONUTBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
-			generateStructure(COCONUTBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
-			generateStructure(COCONUTBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
+			if(ConfigHandler.enableCoconutBushGen)
+			{
+				generateStructure(COCONUTBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
+				generateStructure(COCONUTBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
+				generateStructure(COCONUTBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
+			}
 			
-			generateStructure(TEALEAFBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
-			generateStructure(TEALEAFBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
-			generateStructure(TEALEAFBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
+			if(ConfigHandler.enableTeaLeafBushGen)
+			{
+				generateStructure(TEALEAFBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
+				generateStructure(TEALEAFBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
+				generateStructure(TEALEAFBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
+			}
 			
-			generateStructure(WHITEGRAPEBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
-			generateStructure(WHITEGRAPEBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
-			generateStructure(WHITEGRAPEBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			if(ConfigHandler.enableWhiteGrapeBushGen)
+			{
+				generateStructure(WHITEGRAPEBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+				generateStructure(WHITEGRAPEBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+				generateStructure(WHITEGRAPEBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			}
 			
-			generateStructure(CRANBERRYBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
-			generateStructure(CRANBERRYBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
-			generateStructure(CRANBERRYBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			if(ConfigHandler.enableCranberryBushGen)
+			{
+				generateStructure(CRANBERRYBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+				generateStructure(CRANBERRYBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+				generateStructure(CRANBERRYBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			}
 			
-			generateStructure(TOMATOBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
-			generateStructure(TOMATOBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
-			generateStructure(TOMATOBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			if(ConfigHandler.enableTomatoBushGen)
+			{
+				generateStructure(TOMATOBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+				generateStructure(TOMATOBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+				generateStructure(TOMATOBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			}
 			
-			generateStructure(POMEGRANATEBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeSavanna.class);
-			generateStructure(POMEGRANATEBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeSavanna.class);
-			generateStructure(POMEGRANATEBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeSavanna.class);
+			if(ConfigHandler.enablePomegranateBushGen)
+			{
+				generateStructure(POMEGRANATEBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeSavanna.class);
+				generateStructure(POMEGRANATEBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeSavanna.class);
+				generateStructure(POMEGRANATEBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeSavanna.class);
+			}
 			
-			generateStructure(PEACHBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class, BiomePlains.class);
-			generateStructure(PEACHBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
-			generateStructure(PEACHBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			if(ConfigHandler.enablePeachBushGen)
+			{
+				generateStructure(PEACHBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class, BiomePlains.class);
+				generateStructure(PEACHBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+				generateStructure(PEACHBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeForest.class);
+			}
 			
-			generateStructure(MANGOBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
-			generateStructure(MANGOBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
-			generateStructure(MANGOBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
+			if(ConfigHandler.enableMangoBushGen)
+			{
+				generateStructure(MANGOBUSH1, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
+				generateStructure(MANGOBUSH2, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
+				generateStructure(MANGOBUSH3, world, random, chunkX, chunkZ, 120, Blocks.GRASS, BiomeJungle.class);
+			}
 			
 			break;
 			

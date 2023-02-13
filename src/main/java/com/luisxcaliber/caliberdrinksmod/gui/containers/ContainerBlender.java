@@ -70,7 +70,7 @@ public class ContainerBlender extends Container
 	@Override
 	public void onCraftMatrixChanged(IInventory inventoryIn) 
 	{
-		if (!this.world.isRemote)
+		if (!world.isRemote)
 		{
 			EntityPlayerMP eplayer = (EntityPlayerMP) player;
 			IRecipe recipe = CraftingManager.findMatchingRecipe(craftMatrix, world);

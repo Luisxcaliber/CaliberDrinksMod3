@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "BGB",
+        "CRC",
+        "BCB"
+    ],
+    "key": {
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "C": {
+            "item": "minecraft:concrete",
+            "data": 8
+        },
+        "B": {
+            "item": "minecraft:concrete",
+            "data": 15
+        },
+        "G": {
+            "item": "minecraft:concrete",
+            "data": 7
+        }
+    },
+    
+    "result":
+    {
+        "item": "caliberdrinksmod:light_gray_blender_base",
+        "count": 1
+    }
+}

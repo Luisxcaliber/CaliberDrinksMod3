@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "BGB",
+        "BRB",
+        "BBB"
+    ],
+    "key": {
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "B": {
+            "item": "minecraft:concrete",
+            "data": 15
+        },
+        "G": {
+            "item": "minecraft:concrete",
+            "data": 7
+        }
+    },
+    
+    "result":
+    {
+        "item": "caliberdrinksmod:black_blender_base",
+        "count": 1
+    }
+}

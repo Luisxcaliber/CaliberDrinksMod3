@@ -1,8 +1,0 @@
-{
-  "ingredients": {
-    "fluid": "com.luisxcaliber.caliberdrinksmod.recipes.FluidIngredientFactory"
-  },
-  "recipes": {
-		"fluid_shapeless": "com.luisxcaliber.caliberdrinksmod.recipes.ShapelessFluidRecipeFactory"
-	}
-}

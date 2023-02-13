@@ -1,9 +1,9 @@
 {
     "variants": 
     {
-        "facing=south": { "model": "caliberdrinksmod:brown_blender"},
-        "facing=west": { "model": "caliberdrinksmod:brown_blender", "y": 90},
-        "facing=north": { "model": "caliberdrinksmod:brown_blender", "y": 180},
-        "facing=east": { "model": "caliberdrinksmod:brown_blender", "y": 270}
+        "facing=north": { "model": "caliberdrinksmod:brown_blender"},
+        "facing=east": { "model": "caliberdrinksmod:brown_blender", "y": 90},
+        "facing=south": { "model": "caliberdrinksmod:brown_blender", "y": 180},
+        "facing=west": { "model": "caliberdrinksmod:brown_blender", "y": 270}
     }
 }

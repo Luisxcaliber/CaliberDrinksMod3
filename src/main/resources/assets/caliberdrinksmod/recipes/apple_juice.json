@@ -1,0 +1,26 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+      "item": "minecraft:apple"
+    },
+
+    {
+      "item": "minecraft:potion"
+    },
+    
+    {
+      "item": "minecraft:sugar"
+    }
+    
+    ],
+
+    "result": 
+    {
+        "item": "caliberdrinksmod:apple_juice",
+        "count": 1
+    }
+}

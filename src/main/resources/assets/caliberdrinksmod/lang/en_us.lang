@@ -52,16 +52,77 @@ item.pomegranate.name=Pomegranate
 item.peach.name=Peach
 item.mango.name=Mango
 
-//Bucket
+//Buckets
 item.wood_bucket.name=Wood Bucket
 item.wood_bucket.filled.name=%s Wood Bucket
+item.apple_juice_bucket.name=Apple Juice Bucket
+item.grape_juice_bucket.name=Grape Juice Bucket
+item.orange_juice_bucket.name=Orange Juice Bucket
+item.fruit_punch_bucket.name=Fruit Punch Bucket
+item.lemonade_bucket.name=Lemonade Bucket
+item.pink_lemonade_bucket.name=Pink Lemonade Bucket
+item.beetroot_juice_bucket.name=Beetroot Juice Bucket
+item.grapefruit_juice_bucket.name=Grapefruit Juice Bucket
+item.pineapple_juice_bucket.name=Pineapple Juice Bucket
+item.chocolate_milk_bucket.name=Chocolate Milk Bucket
+item.strawberry_milk_bucket.name=Strawberry Milk Bucket
+item.hot_chocolate_bucket.name=Hot Chocolate Bucket
+item.carrot_juice_bucket.name=Carrot Juice Bucket
+item.strawberry_juice_bucket.name=Strawberry Juice Bucket
+item.watermelon_juice_bucket.name=Watermelon Juice Bucket
+item.coconut_water_bucket.name=Coconut Water Bucket
+item.tea_bucket.name=Tea Bucket
+item.iced_tea_bucket.name=Iced Tea Bucket
+item.green_tea_bucket.name=Green Tea Bucket
+item.black_tea_bucket.name=Black Tea Bucket
+item.white_tea_bucket.name=White Tea Bucket
+item.yellow_tea_bucket.name=Yellow Tea Bucket
+item.lemon_tea_bucket.name=Lemon Tea Bucket
+item.white_grape_juice_bucket.name=White Grape Juice Bucket
+item.cranberry_juice_bucket.name=Cranberry Juice Bucket
+item.tomato_juice_bucket.name=Tomato Juice Bucket
+item.pomegranate_juice_bucket.name=Pomegranate Juice Bucket
+item.peach_juice_bucket.name=Peach Juice Bucket
+item.mango_juice_bucket.name=Mango Juice Bucket
+item.coffee_bucket.name=Coffee Bucket
+item.iced_coffee_bucket.name=Iced Coffee Bucket
 
 //Blender Parts
 item.blender_jar.name=Blender Jar
 
+item.black_blender_lid.name=Black Blender Lid
+item.red_blender_lid.name=Red Blender Lid
+item.green_blender_lid.name=Green Blender Lid
+item.brown_blender_lid.name=Brown Blender Lid
 item.blue_blender_lid.name=Blue Blender Lid
+item.purple_blender_lid.name=Purple Blender Lid
+item.cyan_blender_lid.name=Cyan Blender Lid
+item.light_gray_blender_lid.name=Light Gray Blender Lid
+item.gray_blender_lid.name=Gray Blender Lid
+item.pink_blender_lid.name=Pink Blender Lid
+item.lime_blender_lid.name=Lime Blender Lid
+item.yellow_blender_lid.name=Yellow Blender Lid
+item.light_blue_blender_lid.name=Light Blue Blender Lid
+item.magenta_blender_lid.name=Magenta Blender Lid
+item.orange_blender_lid.name=Orange Blender Lid
+item.white_blender_lid.name=White Blender Lid
 
+item.black_blender_base.name=Black Blender Base
+item.red_blender_base.name=Red Blender Base
+item.green_blender_base.name=Green Blender Base
+item.brown_blender_base.name=Brown Blender Base
 item.blue_blender_base.name=Blue Blender Base
+item.purple_blender_base.name=Purple Blender Base
+item.cyan_blender_base.name=Cyan Blender Base
+item.light_gray_blender_base.name=Light Gray Blender Base
+item.gray_blender_base.name=Gray Blender Base
+item.pink_blender_base.name=Pink Blender Base
+item.lime_blender_base.name=Lime Blender Base
+item.yellow_blender_base.name=Yellow Blender Base
+item.light_blue_blender_base.name=Light Blender Base
+item.magenta_blender_base.name=Magenta Blender Base
+item.orange_blender_base.name=Orange Blender Base
+item.white_blender_base.name=White Blender Base
 
 //Plants
 tile.grape_plant.name=Grape Plant
@@ -172,8 +233,8 @@ tile.brown_blender.name=Brown Blender
 tile.blue_blender.name=Blue Blender
 tile.purple_blender.name=Purple Blender
 tile.cyan_blender.name=Cyan Blender
-tile.light_grey_blender.name=Light Grey Blender
-tile.grey_blender.name=Grey Blender
+tile.light_gray_blender.name=Light Gray Blender
+tile.gray_blender.name=Gray Blender
 tile.pink_blender.name=Pink Blender
 tile.lime_blender.name=Lime Blender
 tile.yellow_blender.name=Yellow Blender

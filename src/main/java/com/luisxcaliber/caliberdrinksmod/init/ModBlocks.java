@@ -102,8 +102,8 @@ public class ModBlocks
 	public static final Block BLUE_BLENDER;
 	public static final Block PURPLE_BLENDER;
 	public static final Block CYAN_BLENDER;
-	public static final Block LIGHT_GREY_BLENDER;
-	public static final Block GREY_BLENDER;
+	public static final Block LIGHT_GRAY_BLENDER;
+	public static final Block GRAY_BLENDER;
 	public static final Block PINK_BLENDER;
 	public static final Block LIME_BLENDER;
 	public static final Block YELLOW_BLENDER;
@@ -190,8 +190,8 @@ public class ModBlocks
 		BLUE_BLENDER = new BlockBlender("blue_blender", Material.GLASS);
 		PURPLE_BLENDER = new BlockBlender("purple_blender", Material.GLASS);
 		CYAN_BLENDER = new BlockBlender("cyan_blender", Material.GLASS);
-		LIGHT_GREY_BLENDER = new BlockBlender("light_grey_blender", Material.GLASS);
-		GREY_BLENDER = new BlockBlender("grey_blender", Material.GLASS);
+		LIGHT_GRAY_BLENDER = new BlockBlender("light_gray_blender", Material.GLASS);
+		GRAY_BLENDER = new BlockBlender("gray_blender", Material.GLASS);
 		PINK_BLENDER = new BlockBlender("pink_blender", Material.GLASS);
 		LIME_BLENDER = new BlockBlender("lime_blender", Material.GLASS);
 		YELLOW_BLENDER = new BlockBlender("yellow_blender", Material.GLASS);
@@ -279,8 +279,8 @@ public class ModBlocks
 		registerBlock(BLUE_BLENDER);
 		registerBlock(PURPLE_BLENDER);
 		registerBlock(CYAN_BLENDER);
-		registerBlock(LIGHT_GREY_BLENDER);
-		registerBlock(GREY_BLENDER);
+		registerBlock(LIGHT_GRAY_BLENDER);
+		registerBlock(GRAY_BLENDER);
 		registerBlock(PINK_BLENDER);
 		registerBlock(LIME_BLENDER);
 		registerBlock(YELLOW_BLENDER);

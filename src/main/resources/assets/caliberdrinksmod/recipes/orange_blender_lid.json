@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " C ",
+        "BBB"
+    ],
+    "key": {
+        "C": {
+            "item": "minecraft:concrete",
+            "data": 1
+        },
+        "B": {
+            "item": "minecraft:concrete",
+            "data": 15
+        }
+    },
+    
+    "result":
+    {
+        "item": "caliberdrinksmod:orange_blender_lid",
+        "count": 1
+    }
+}

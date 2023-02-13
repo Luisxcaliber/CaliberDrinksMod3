@@ -1,7 +1,5 @@
 package com.luisxcaliber.caliberdrinksmod.blocks.plants;
 
-import java.util.Random;
-
 import com.luisxcaliber.caliberdrinksmod.init.ModItems;
 
 import net.minecraft.block.BlockCrops;
@@ -39,12 +37,6 @@ public class BlockOrangePlant extends BlockCrops
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
 	{
 		return ORANGE_AABB[((Integer)state.getValue(this.getAgeProperty())).intValue()];
-	}
-    
-	@Override
-	public int quantityDropped(Random rand)
-	{
-		return 3 + rand.nextInt(1);
 	}
 	
 	@Override

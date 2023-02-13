@@ -107,6 +107,9 @@ public class RegistryHandler
 		GameRegistry.registerWorldGenerator(new WorldGenModStructures(), 3);
 		ModItems.register();
 		ModBlocks.register();
+		
+		ConfigHandler.registerConfig(event);
+		EventHandler.registerEvents();
 	}
 	
 	public static void init(FMLInitializationEvent event)

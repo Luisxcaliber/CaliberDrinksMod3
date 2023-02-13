@@ -77,7 +77,7 @@ public class BlockBlender extends BlockBase
 	
 	public BlockRenderLayer getBlockLayer()
 	{
-		return BlockRenderLayer.TRANSLUCENT;
+		return BlockRenderLayer.CUTOUT;
 	}
 	
 	public boolean isOpaqueCube(IBlockState state)
@@ -153,36 +153,39 @@ public class BlockBlender extends BlockBase
 		return ((EnumFacing)state.getValue(FACING)).getIndex();
 	}
 	
-	private static final AxisAlignedBB LEG_1 = new AxisAlignedBB(0.625, 0, 0.25, 0.75, 0.125, 0.375);
-	private static final AxisAlignedBB LEG_2 = new AxisAlignedBB(0.25, 0, 0.25, 0.375, 0.125, 0.375);
-	private static final AxisAlignedBB LEG_3 = new AxisAlignedBB(0.25, 0, 0.625, 0.375, 0.125, 0.75);
-	private static final AxisAlignedBB LEG_4 = new AxisAlignedBB(0.625, 0, 0.625, 0.75, 0.125, 0.75);
-	private static final AxisAlignedBB BASE_PART_1 = new AxisAlignedBB(0.25, 0.062, 0.375, 0.75, 0.125, 0.625);
-	private static final AxisAlignedBB BASE_PART_2 = new AxisAlignedBB(0.375, 0.062, 0.25, 0.625, 0.125, 0.75);
-	private static final AxisAlignedBB BASE_PART_3 = new AxisAlignedBB(0.25, 0.125, 0.25, 0.75, 0.188, 0.75);
-	private static final AxisAlignedBB BASE_PART_4 = new AxisAlignedBB(0.312, 0.188, 0.312, 0.688, 0.375, 0.688);
-	private static final AxisAlignedBB BASE_PART_5 = new AxisAlignedBB(0.375, 0.25, 0.688, 0.438, 0.312, 0.75);
-	private static final AxisAlignedBB BASE_PART_6 = new AxisAlignedBB(0.562, 0.25, 0.688, 0.625, 0.312, 0.75);
-	private static final AxisAlignedBB BASE_PART_7 = new AxisAlignedBB(0.375, 0.375, 0.375, 0.625, 0.438, 0.438);
-	private static final AxisAlignedBB BASE_PART_8 = new AxisAlignedBB(0.375, 0.375, 0.562, 0.625, 0.438, 0.625);
-	private static final AxisAlignedBB BASE_PART_9 = new AxisAlignedBB(0.375, 0.375, 0.438, 0.438, 0.438, 0.562);
-	private static final AxisAlignedBB BASE_PART_10 = new AxisAlignedBB(0.562, 0.375, 0.438, 0.625, 0.438, 0.562);
-	private static final AxisAlignedBB JAR_PART_1 = new AxisAlignedBB(0.438, 0.375, 0.438, 0.562, 0.438, 0.562);
-	private static final AxisAlignedBB JAR_PART_2 = new AxisAlignedBB(0.375, 0.5, 0.625, 0.625, 0.812, 0.688);
-	private static final AxisAlignedBB JAR_PART_3 = new AxisAlignedBB(0.375, 0.5, 0.312, 0.625, 0.812, 0.375);
-	private static final AxisAlignedBB JAR_PART_4 = new AxisAlignedBB(0.312, 0.5, 0.375, 0.375, 0.812, 0.625);
-	private static final AxisAlignedBB JAR_PART_5 = new AxisAlignedBB(0.625, 0.5, 0.375, 0.688, 0.812, 0.625);
-	private static final AxisAlignedBB LID_PART_1 = new AxisAlignedBB(0.375, 0.812, 0.312, 0.625, 0.875, 0.688);
-	private static final AxisAlignedBB LID_PART_2 = new AxisAlignedBB(0.312, 0.812, 0.375, 0.688, 0.875, 0.625);
-	private static final AxisAlignedBB LID_PART_3 = new AxisAlignedBB(0.375, 0.875, 0.375, 0.625, 0.938, 0.625);
-	private static final AxisAlignedBB LID_PART_4 = new AxisAlignedBB(0.438, 0.938, 0.438, 0.562, 1, 0.562);
-	private static final AxisAlignedBB HANDLE_PART_1 = new AxisAlignedBB(0.688, 0.5, 0.5, 0.75, 0.562, 0.562);
-	private static final AxisAlignedBB HANDLE_PART_2 = new AxisAlignedBB(0.75, 0.562, 0.438, 0.812, 0.75, 0.5);
-	private static final AxisAlignedBB HANDLE_PART_3 = new AxisAlignedBB(0.688, 0.75, 0.5, 0.75, 0.812, 0.562);
-	/**
-	* AxisAlignedBBs and methods getBoundingBox, collisionRayTrace, and collisionRayTrace generated using MrCrayfish's Model Creator <a href="https://mrcrayfish.com/tools?id=mc">https://mrcrayfish.com/tools?id=mc</a>
-	*/
-	private static final List<AxisAlignedBB> COLLISION_BOXES = Lists.newArrayList(LEG_1, LEG_2, LEG_3, LEG_4, BASE_PART_1, BASE_PART_2, BASE_PART_3, BASE_PART_4, BASE_PART_5, BASE_PART_6, BASE_PART_7, BASE_PART_8, BASE_PART_9, BASE_PART_10, JAR_PART_1, JAR_PART_2, JAR_PART_3, JAR_PART_4, JAR_PART_5, LID_PART_1, LID_PART_2, LID_PART_3, LID_PART_4, HANDLE_PART_1, HANDLE_PART_2, HANDLE_PART_3);
+	private static final AxisAlignedBB LEG1 = new AxisAlignedBB(0.625, 0, 0.25, 0.75, 0.125, 0.375);
+	private static final AxisAlignedBB LEG2 = new AxisAlignedBB(0.25, 0, 0.25, 0.375, 0.125, 0.375);
+	private static final AxisAlignedBB LEG3 = new AxisAlignedBB(0.625, 0, 0.625, 0.75, 0.125, 0.75);
+	private static final AxisAlignedBB LEG4 = new AxisAlignedBB(0.25, 0, 0.625, 0.375, 0.125, 0.75);
+	private static final AxisAlignedBB BPART1 = new AxisAlignedBB(0.375, 0.062, 0.25, 0.625, 0.125, 0.75);
+	private static final AxisAlignedBB BPART2 = new AxisAlignedBB(0.625, 0.062, 0.375, 0.75, 0.125, 0.625);
+	private static final AxisAlignedBB BPART3 = new AxisAlignedBB(0.25, 0.062, 0.375, 0.375, 0.125, 0.625);
+	private static final AxisAlignedBB BPART4 = new AxisAlignedBB(0.25, 0.125, 0.25, 0.75, 0.188, 0.75);
+	private static final AxisAlignedBB BPART5 = new AxisAlignedBB(0.312, 0.188, 0.312, 0.688, 0.375, 0.688);
+	private static final AxisAlignedBB BPART6 = new AxisAlignedBB(0.562, 0.25, 0.25, 0.625, 0.312, 0.312);
+	private static final AxisAlignedBB BPART7 = new AxisAlignedBB(0.375, 0.25, 0.25, 0.438, 0.312, 0.312);
+	private static final AxisAlignedBB BPART8 = new AxisAlignedBB(0.375, 0.375, 0.375, 0.625, 0.438, 0.438);
+	private static final AxisAlignedBB BPART9 = new AxisAlignedBB(0.375, 0.375, 0.562, 0.625, 0.438, 0.625);
+	private static final AxisAlignedBB BPART10 = new AxisAlignedBB(0.562, 0.375, 0.438, 0.625, 0.438, 0.562);
+	private static final AxisAlignedBB BPART11 = new AxisAlignedBB(0.375, 0.375, 0.438, 0.438, 0.438, 0.562);
+	private static final AxisAlignedBB BPART12 = new AxisAlignedBB(0.438, 0.375, 0.438, 0.562, 0.438, 0.562);
+	private static final AxisAlignedBB JPART1 = new AxisAlignedBB(0.438, 0.438, 0.375, 0.562, 0.469, 0.438);
+	private static final AxisAlignedBB JPART2 = new AxisAlignedBB(0.438, 0.438, 0.562, 0.562, 0.469, 0.625);
+	private static final AxisAlignedBB JPART3 = new AxisAlignedBB(0.375, 0.438, 0.438, 0.438, 0.469, 0.562);
+	private static final AxisAlignedBB JPART4 = new AxisAlignedBB(0.562, 0.438, 0.438, 0.625, 0.469, 0.562);
+	private static final AxisAlignedBB JPART5 = new AxisAlignedBB(0.375, 0.5, 0.312, 0.625, 0.812, 0.375);
+	private static final AxisAlignedBB JPART6 = new AxisAlignedBB(0.375, 0.5, 0.625, 0.625, 0.812, 0.688);
+	private static final AxisAlignedBB JPART7 = new AxisAlignedBB(0.312, 0.5, 0.375, 0.375, 0.812, 0.625);
+	private static final AxisAlignedBB JPART8 = new AxisAlignedBB(0.625, 0.5, 0.375, 0.688, 0.812, 0.625);
+	private static final AxisAlignedBB JPART9 = new AxisAlignedBB(0.25, 0.5, 0.438, 0.312, 0.562, 0.5);
+	private static final AxisAlignedBB JPART10 = new AxisAlignedBB(0.25, 0.75, 0.438, 0.312, 0.812, 0.5);
+	private static final AxisAlignedBB JPART11 = new AxisAlignedBB(0.188, 0.562, 0.5, 0.25, 0.75, 0.562);
+	private static final AxisAlignedBB LPART1 = new AxisAlignedBB(0.375, 0.812, 0.312, 0.625, 0.875, 0.688);
+	private static final AxisAlignedBB LPART2 = new AxisAlignedBB(0.312, 0.812, 0.375, 0.375, 0.875, 0.625);
+	private static final AxisAlignedBB LPART3 = new AxisAlignedBB(0.625, 0.812, 0.375, 0.688, 0.875, 0.625);
+	private static final AxisAlignedBB LPART4 = new AxisAlignedBB(0.375, 0.875, 0.375, 0.625, 0.938, 0.625);
+	private static final AxisAlignedBB LPART5 = new AxisAlignedBB(0.438, 0.938, 0.438, 0.562, 1, 0.562);
+	private static final List<AxisAlignedBB> COLLISION_BOXES = Lists.newArrayList(LEG1, LEG2, LEG3, LEG4, BPART1, BPART2, BPART3, BPART4, BPART5, BPART6, BPART7, BPART8, BPART9, BPART10, BPART11, BPART12, JPART1, JPART2, JPART3, JPART4, JPART5, JPART6, JPART7, JPART8, JPART9, JPART10, JPART11, LPART1, LPART2, LPART3, LPART4, LPART5);
 	private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.25, 0, 0.25, 0.812, 1, 0.75);
 
 	@Override

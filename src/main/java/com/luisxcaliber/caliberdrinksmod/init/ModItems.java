@@ -6,6 +6,7 @@ import com.luisxcaliber.caliberdrinksmod.items.food.DrinkBase;
 import com.luisxcaliber.caliberdrinksmod.items.food.DrinkCoffee;
 import com.luisxcaliber.caliberdrinksmod.items.food.DrinkMilk;
 import com.luisxcaliber.caliberdrinksmod.items.food.FoodBase;
+import com.luisxcaliber.caliberdrinksmod.items.tools.ItemFluidBucket;
 import com.luisxcaliber.caliberdrinksmod.items.tools.ItemModBucket;
 import com.luisxcaliber.caliberdrinksmod.util.handlers.RegistryHandler;
 
@@ -80,15 +81,76 @@ public class ModItems
 	public static final Item COFFEE_BEAN;
 	public static final Item MANGO_SEED;
 	
-	//Bucket
+	//Buckets
 	public static final Item WOOD_BUCKET;
+	public static final Item APPLE_JUICE_BUCKET;
+	public static final Item GRAPE_JUICE_BUCKET;
+	public static final Item ORANGE_JUICE_BUCKET;
+	public static final Item FRUIT_PUNCH_BUCKET;
+	public static final Item LEMONADE_BUCKET;
+	public static final Item PINK_LEMONADE_BUCKET;
+	public static final Item BEETROOT_JUICE_BUCKET;
+	public static final Item GRAPEFRUIT_JUICE_BUCKET;
+	public static final Item PINEAPPLE_JUICE_BUCKET;
+	public static final Item CHOCOLATE_MILK_BUCKET;
+	public static final Item STRAWBERRY_MILK_BUCKET;
+	public static final Item HOT_CHOCOLATE_BUCKET;
+	public static final Item CARROT_JUICE_BUCKET;
+	public static final Item STRAWBERRY_JUICE_BUCKET;
+	public static final Item WATERMELON_JUICE_BUCKET;
+	public static final Item COCONUT_WATER_BUCKET;
+	public static final Item TEA_BUCKET;
+	public static final Item ICED_TEA_BUCKET;
+	public static final Item GREEN_TEA_BUCKET;
+	public static final Item BLACK_TEA_BUCKET;
+	public static final Item WHITE_TEA_BUCKET;
+	public static final Item YELLOW_TEA_BUCKET;
+	public static final Item LEMON_TEA_BUCKET;
+	public static final Item WHITE_GRAPE_JUICE_BUCKET;
+	public static final Item CRANBERRY_JUICE_BUCKET;
+	public static final Item TOMATO_JUICE_BUCKET;
+	public static final Item POMEGRANATE_JUICE_BUCKET;
+	public static final Item PEACH_JUICE_BUCKET;
+	public static final Item MANGO_JUICE_BUCKET;
+	public static final Item COFFEE_BUCKET;
+	public static final Item ICED_COFFEE_BUCKET;
 	
 	//Blender Parts
 	public static final Item BLENDER_JAR;
 	
+	public static final Item BLACK_BLENDER_LID;
+	public static final Item RED_BLENDER_LID;
+	public static final Item GREEN_BLENDER_LID;
+	public static final Item BROWN_BLENDER_LID;
 	public static final Item BLUE_BLENDER_LID;
+	public static final Item PURPLE_BLENDER_LID;
+	public static final Item CYAN_BLENDER_LID;
+	public static final Item LIGHT_GRAY_BLENDER_LID;
+	public static final Item GRAY_BLENDER_LID;
+	public static final Item PINK_BLENDER_LID;
+	public static final Item LIME_BLENDER_LID;
+	public static final Item YELLOW_BLENDER_LID;
+	public static final Item LIGHT_BLUE_BLENDER_LID;
+	public static final Item MAGENTA_BLENDER_LID;
+	public static final Item ORANGE_BLENDER_LID;
+	public static final Item WHITE_BLENDER_LID;
 	
+	public static final Item BLACK_BLENDER_BASE;
+	public static final Item RED_BLENDER_BASE;
+	public static final Item GREEN_BLENDER_BASE;
+	public static final Item BROWN_BLENDER_BASE;
 	public static final Item BLUE_BLENDER_BASE;
+	public static final Item PURPLE_BLENDER_BASE;
+	public static final Item CYAN_BLENDER_BASE;
+	public static final Item LIGHT_GRAY_BLENDER_BASE;
+	public static final Item GRAY_BLENDER_BASE;
+	public static final Item PINK_BLENDER_BASE;
+	public static final Item LIME_BLENDER_BASE;
+	public static final Item YELLOW_BLENDER_BASE;
+	public static final Item LIGHT_BLUE_BLENDER_BASE;
+	public static final Item MAGENTA_BLENDER_BASE;
+	public static final Item ORANGE_BLENDER_BASE;
+	public static final Item WHITE_BLENDER_BASE;
 	
 	static
 	{
@@ -159,15 +221,76 @@ public class ModItems
 		COFFEE_BEAN = new ItemDrinkSeed("coffee_bean", ModBlocks.COFFEE_BEAN_PLANT);
 		MANGO_SEED = new ItemDrinkSeed("mango_seed", ModBlocks.MANGO_PLANT);
 		
-		//Bucket
+		//Buckets
 		WOOD_BUCKET = new ItemModBucket("wood_bucket");
+		APPLE_JUICE_BUCKET = new ItemFluidBucket("apple_juice_bucket", ModBlocks.APPLE_JUICE_BLOCK);
+		GRAPE_JUICE_BUCKET = new ItemFluidBucket("grape_juice_bucket", ModBlocks.GRAPE_JUICE_BLOCK);
+		ORANGE_JUICE_BUCKET = new ItemFluidBucket("orange_juice_bucket", ModBlocks.ORANGE_JUICE_BLOCK);
+		FRUIT_PUNCH_BUCKET = new ItemFluidBucket("fruit_punch_bucket", ModBlocks.FRUIT_PUNCH_BLOCK);
+		LEMONADE_BUCKET = new ItemFluidBucket("lemonade_bucket", ModBlocks.LEMONADE_BLOCK);
+		PINK_LEMONADE_BUCKET = new ItemFluidBucket("pink_lemonade_bucket", ModBlocks.PINK_LEMONADE_BLOCK);
+		BEETROOT_JUICE_BUCKET = new ItemFluidBucket("beetroot_juice_bucket", ModBlocks.BEETROOT_JUICE_BLOCK);
+		GRAPEFRUIT_JUICE_BUCKET = new ItemFluidBucket("grapefruit_juice_bucket", ModBlocks.GRAPEFRUIT_JUICE_BLOCK);
+		PINEAPPLE_JUICE_BUCKET = new ItemFluidBucket("pineapple_juice_bucket", ModBlocks.PINEAPPLE_JUICE_BLOCK);
+		CHOCOLATE_MILK_BUCKET = new ItemFluidBucket("chocolate_milk_bucket", ModBlocks.CHOCOLATE_MILK_BLOCK);
+		STRAWBERRY_MILK_BUCKET = new ItemFluidBucket("strawberry_milk_bucket", ModBlocks.STRAWBERRY_MILK_BLOCK);
+		HOT_CHOCOLATE_BUCKET = new ItemFluidBucket("hot_chocolate_bucket", ModBlocks.HOT_CHOCOLATE_BLOCK);
+		CARROT_JUICE_BUCKET = new ItemFluidBucket("carrot_juice_bucket", ModBlocks.CARROT_JUICE_BLOCK);
+		STRAWBERRY_JUICE_BUCKET = new ItemFluidBucket("strawberry_juice_bucket", ModBlocks.STRAWBERRY_JUICE_BLOCK);
+		WATERMELON_JUICE_BUCKET = new ItemFluidBucket("watermelon_juice_bucket", ModBlocks.WATERMELON_JUICE_BLOCK);
+		COCONUT_WATER_BUCKET = new ItemFluidBucket("coconut_water_bucket", ModBlocks.COCONUT_WATER_BLOCK);
+		TEA_BUCKET = new ItemFluidBucket("tea_bucket", ModBlocks.TEA_BLOCK);
+		ICED_TEA_BUCKET = new ItemFluidBucket("iced_tea_bucket", ModBlocks.ICED_TEA_BLOCK);
+		GREEN_TEA_BUCKET = new ItemFluidBucket("green_tea_bucket", ModBlocks.GREEN_TEA_BLOCK);
+		BLACK_TEA_BUCKET = new ItemFluidBucket("black_tea_bucket", ModBlocks.BLACK_TEA_BLOCK);
+		WHITE_TEA_BUCKET = new ItemFluidBucket("white_tea_bucket", ModBlocks.WHITE_TEA_BLOCK);
+		YELLOW_TEA_BUCKET = new ItemFluidBucket("yellow_tea_bucket", ModBlocks.YELLOW_TEA_BLOCK);
+		LEMON_TEA_BUCKET = new ItemFluidBucket("lemon_tea_bucket", ModBlocks.LEMON_TEA_BLOCK);
+		WHITE_GRAPE_JUICE_BUCKET = new ItemFluidBucket("white_grape_juice_bucket", ModBlocks.WHITE_GRAPE_JUICE_BLOCK);
+		CRANBERRY_JUICE_BUCKET = new ItemFluidBucket("cranberry_juice_bucket", ModBlocks.CRANBERRY_JUICE_BLOCK);
+		TOMATO_JUICE_BUCKET = new ItemFluidBucket("tomato_juice_bucket", ModBlocks.TOMATO_JUICE_BLOCK);
+		POMEGRANATE_JUICE_BUCKET = new ItemFluidBucket("pomegranate_juice_bucket", ModBlocks.POMEGRANATE_JUICE_BLOCK);
+		PEACH_JUICE_BUCKET = new ItemFluidBucket("peach_juice_bucket", ModBlocks.PEACH_JUICE_BLOCK);
+		MANGO_JUICE_BUCKET = new ItemFluidBucket("mango_juice_bucket", ModBlocks.MANGO_JUICE_BLOCK);
+		COFFEE_BUCKET = new ItemFluidBucket("coffee_bucket", ModBlocks.COFFEE_BLOCK);
+		ICED_COFFEE_BUCKET = new ItemFluidBucket("iced_coffee_bucket", ModBlocks.ICED_COFFEE_BLOCK);
 		
 		//Blender Parts
 		BLENDER_JAR = new ItemBase("blender_jar");
 		
+		BLACK_BLENDER_LID = new ItemBase("black_blender_lid");
+		RED_BLENDER_LID = new ItemBase("red_blender_lid");
+		GREEN_BLENDER_LID = new ItemBase("green_blender_lid");
+		BROWN_BLENDER_LID = new ItemBase("brown_blender_lid");
 		BLUE_BLENDER_LID = new ItemBase("blue_blender_lid");
+		PURPLE_BLENDER_LID = new ItemBase("purple_blender_lid");
+		CYAN_BLENDER_LID = new ItemBase("cyan_blender_lid");
+		LIGHT_GRAY_BLENDER_LID = new ItemBase("light_gray_blender_lid");
+		GRAY_BLENDER_LID = new ItemBase("gray_blender_lid");
+		PINK_BLENDER_LID = new ItemBase("pink_blender_lid");
+		LIME_BLENDER_LID = new ItemBase("lime_blender_lid");
+		YELLOW_BLENDER_LID = new ItemBase("yellow_blender_lid");
+		LIGHT_BLUE_BLENDER_LID = new ItemBase("light_blue_blender_lid");
+		MAGENTA_BLENDER_LID = new ItemBase("magenta_blender_lid");
+		ORANGE_BLENDER_LID = new ItemBase("orange_blender_lid");
+		WHITE_BLENDER_LID = new ItemBase("white_blender_lid");
 		
+		BLACK_BLENDER_BASE = new ItemBase("black_blender_base");
+		RED_BLENDER_BASE = new ItemBase("red_blender_base");
+		GREEN_BLENDER_BASE = new ItemBase("green_blender_base");
+		BROWN_BLENDER_BASE = new ItemBase("brown_blender_base");
 		BLUE_BLENDER_BASE = new ItemBase("blue_blender_base");
+		PURPLE_BLENDER_BASE = new ItemBase("purple_blender_base");
+		CYAN_BLENDER_BASE = new ItemBase("cyan_blender_base");
+		LIGHT_GRAY_BLENDER_BASE = new ItemBase("light_gray_blender_base");
+		GRAY_BLENDER_BASE = new ItemBase("gray_blender_base");
+		PINK_BLENDER_BASE = new ItemBase("pink_blender_base");
+		LIME_BLENDER_BASE = new ItemBase("lime_blender_base");
+		YELLOW_BLENDER_BASE = new ItemBase("yellow_blender_base");
+		LIGHT_BLUE_BLENDER_BASE = new ItemBase("light_blue_blender_base");
+		MAGENTA_BLENDER_BASE = new ItemBase("magenta_blender_base");
+		ORANGE_BLENDER_BASE = new ItemBase("orange_blender_base");
+		WHITE_BLENDER_BASE = new ItemBase("white_blender_base");
 	}
 	
 	public static void register()
@@ -239,15 +362,75 @@ public class ModItems
 		registerItem(COFFEE_BEAN);
 		registerItem(MANGO_SEED);
 		
-		//Bucket
+		//Buckets
 		registerItem(WOOD_BUCKET);
+		registerItem(APPLE_JUICE_BUCKET);
+		registerItem(GRAPE_JUICE_BUCKET);
+		registerItem(ORANGE_JUICE_BUCKET);
+		registerItem(FRUIT_PUNCH_BUCKET);
+		registerItem(LEMONADE_BUCKET);
+		registerItem(PINK_LEMONADE_BUCKET);
+		registerItem(BEETROOT_JUICE_BUCKET);
+		registerItem(GRAPEFRUIT_JUICE_BUCKET);
+		registerItem(PINEAPPLE_JUICE_BUCKET);
+		registerItem(CHOCOLATE_MILK_BUCKET);
+		registerItem(STRAWBERRY_MILK_BUCKET);
+		registerItem(HOT_CHOCOLATE);
+		registerItem(CARROT_JUICE_BUCKET);
+		registerItem(STRAWBERRY_JUICE_BUCKET);
+		registerItem(WATERMELON_JUICE_BUCKET);
+		registerItem(COCONUT_WATER_BUCKET);
+		registerItem(TEA_BUCKET);
+		registerItem(ICED_TEA_BUCKET);
+		registerItem(GREEN_TEA_BUCKET);
+		registerItem(BLACK_TEA_BUCKET);
+		registerItem(WHITE_TEA_BUCKET);
+		registerItem(YELLOW_TEA_BUCKET);
+		registerItem(LEMON_TEA_BUCKET);
+		registerItem(WHITE_GRAPE_JUICE_BUCKET);
+		registerItem(CRANBERRY_JUICE_BUCKET);
+		registerItem(TOMATO_JUICE_BUCKET);
+		registerItem(POMEGRANATE_JUICE_BUCKET);
+		registerItem(PEACH_JUICE_BUCKET);
+		registerItem(MANGO_JUICE_BUCKET);
+		registerItem(COFFEE_BUCKET);
+		registerItem(ICED_COFFEE_BUCKET);
 		
 		//Blender Parts
 		registerItem(BLENDER_JAR);
 		
+		registerItem(BLACK_BLENDER_LID);
+		registerItem(RED_BLENDER_LID);
+		registerItem(GREEN_BLENDER_LID);
+		registerItem(BROWN_BLENDER_LID);
 		registerItem(BLUE_BLENDER_LID);
+		registerItem(PURPLE_BLENDER_LID);
+		registerItem(CYAN_BLENDER_LID);
+		registerItem(LIGHT_GRAY_BLENDER_LID);
+		registerItem(GRAY_BLENDER_LID);
+		registerItem(PINK_BLENDER_LID);
+		registerItem(LIME_BLENDER_LID);
+		registerItem(YELLOW_BLENDER_LID);
+		registerItem(LIGHT_BLUE_BLENDER_LID);
+		registerItem(MAGENTA_BLENDER_LID);
+		registerItem(ORANGE_BLENDER_LID);
+		registerItem(WHITE_BLENDER_LID);
 		
+		registerItem(BLACK_BLENDER_BASE);
+		registerItem(RED_BLENDER_BASE);
+		registerItem(GREEN_BLENDER_BASE);
+		registerItem(BROWN_BLENDER_BASE);
 		registerItem(BLUE_BLENDER_BASE);
+		registerItem(PURPLE_BLENDER_BASE);
+		registerItem(CYAN_BLENDER_BASE);
+		registerItem(LIGHT_GRAY_BLENDER_BASE);
+		registerItem(GRAY_BLENDER_BASE);
+		registerItem(LIME_BLENDER_BASE);
+		registerItem(YELLOW_BLENDER_BASE);
+		registerItem(LIGHT_BLUE_BLENDER_BASE);
+		registerItem(MAGENTA_BLENDER_BASE);
+		registerItem(ORANGE_BLENDER_BASE);
+		registerItem(WHITE_BLENDER_BASE);
 	}
 	
 	private static void registerItem(Item item)

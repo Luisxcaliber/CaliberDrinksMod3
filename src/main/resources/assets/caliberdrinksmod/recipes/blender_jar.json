@@ -1,21 +1,17 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "# #",
-        "# G",
-        "BBB"
+        "G G",
+        "G C",
+        "CCC"
     ],
     "key": {
-        "#": {
+        "G": {
             "item": "minecraft:glass"
         },
-        "G": {
+        "C": {
             "item": "minecraft:concrete",
             "data": 7
-        },
-        "B": {
-            "item": "minecraft:concrete",
-            "data": 15
         }
     },
     
